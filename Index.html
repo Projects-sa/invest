@@ -1,0 +1,1291 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>تحدي المليار الوقفي</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap">
+<style>
+/* Layout: an ivory "manuscript" page under a navy arch-shaped hero; one route ("محطات") runs from definition to finance to the billion model, every figure linking back to the section that explains it. */
+:root{
+  --paper:#F6F2E9; --paper-2:#EDE5D3; --card:#FFFDF8; --glass:rgba(255,253,248,.78);
+  --ink:#13293D; --ink-2:#3B5165; --muted:#6A7884; --line:rgba(19,41,61,.13); --line-2:rgba(19,41,61,.07);
+  --teal:#17706E; --teal-soft:#DCEDEA; --sky:#5E9FB8; --sky-soft:#E2EFF4;
+  --gold:#A57629; --gold-soft:#F4E8D0; --rust:#B4512D; --rust-soft:#F7E2D7;
+  --hero:#12293C; --hero-2:#1A3A52; --hero-ink:#F6F2E9; --hero-mute:#B7C5CF;
+  --shadow:0 1px 2px rgba(19,41,61,.06),0 8px 24px -12px rgba(19,41,61,.18);
+  --f-body:"Tajawal","Segoe UI","Noto Sans Arabic",Tahoma,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0D1821; --paper-2:#12212D; --card:#152634; --glass:rgba(21,38,52,.82);
+  --ink:#ECE6DA; --ink-2:#C3CDD4; --muted:#8D9AA5; --line:rgba(236,230,218,.14); --line-2:rgba(236,230,218,.07);
+  --teal:#4DB4AB; --teal-soft:#16393A; --sky:#78B6CC; --sky-soft:#173243;
+  --gold:#D8AD62; --gold-soft:#3A2F1C; --rust:#E2865F; --rust-soft:#45281D;
+  --hero:#09131B; --hero-2:#11283A; --hero-ink:#F1ECE1; --hero-mute:#9FB1BE;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -14px rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0D1821; --paper-2:#12212D; --card:#152634; --glass:rgba(21,38,52,.82);
+  --ink:#ECE6DA; --ink-2:#C3CDD4; --muted:#8D9AA5; --line:rgba(236,230,218,.14); --line-2:rgba(236,230,218,.07);
+  --teal:#4DB4AB; --teal-soft:#16393A; --sky:#78B6CC; --sky-soft:#173243;
+  --gold:#D8AD62; --gold-soft:#3A2F1C; --rust:#E2865F; --rust-soft:#45281D;
+  --hero:#09131B; --hero-2:#11283A; --hero-ink:#F1ECE1; --hero-mute:#9FB1BE;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -14px rgba(0,0,0,.6); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16.5px;line-height:1.8;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+.num,.t-num,table{font-variant-numeric:tabular-nums}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+a{color:var(--teal);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{text-wrap:balance;margin:0;line-height:1.35}
+p{margin:0}
+.wrap{max-width:1140px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.skip{position:absolute;inset-inline-start:12px;top:-60px;background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{top:12px}
+
+/* geometric khatam pattern, tinted by mask so it follows the theme */
+.pattern{--pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23000' stroke-width='1'%3E%3Cpath d='M40 6 L50 30 L74 40 L50 50 L40 74 L30 50 L6 40 L30 30Z'/%3E%3Cpath d='M16 16 L40 26 L64 16 L54 40 L64 64 L40 54 L16 64 L26 40Z'/%3E%3Ccircle cx='40' cy='40' r='7'/%3E%3Cpath d='M0 0 L6 6 M80 0 L74 6 M0 80 L6 74 M80 80 L74 74'/%3E%3C/g%3E%3C/svg%3E")}
+.pattern::before{content:"";position:absolute;inset:0;background:currentColor;-webkit-mask:var(--pat) 0 0/80px 80px repeat;mask:var(--pat) 0 0/80px 80px repeat;pointer-events:none}
+
+/* ===== top bar ===== */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:18px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;white-space:nowrap;color:var(--ink);text-decoration:none}
+.brand svg{flex:none}
+.route{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;padding-block:2px}
+.route::-webkit-scrollbar{display:none}
+.route a{flex:none;text-decoration:none;color:var(--ink-2);font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px;display:flex;align-items:center;gap:6px;transition:background .2s,color .2s}
+.route a .st{width:7px;height:7px;border-radius:50%;border:1.5px solid currentColor;flex:none}
+.route a:hover{background:var(--line-2);color:var(--ink)}
+.route a.on{background:var(--teal-soft);color:var(--teal)}
+.route a.on .st{background:currentColor}
+
+/* ===== hero ===== */
+.hero{position:relative;background:radial-gradient(120% 90% at 85% 0%,var(--hero-2),var(--hero) 60%);color:var(--hero-ink);overflow:hidden}
+.hero.pattern::before{color:var(--hero-ink);opacity:.06}
+.hero .wrap{position:relative;padding-block:56px 44px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:.04em;font-weight:500;color:var(--gold);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.hero .eyebrow{color:#D9B36C}
+.hero h1{font-size:clamp(34px,5.2vw,58px);font-weight:900;line-height:1.2;margin-top:14px;letter-spacing:-.005em}
+.hero h1 em{font-style:normal;color:#E0BC76}
+.hero .lede{margin-top:16px;color:var(--hero-mute);font-size:18px;max-width:58ch}
+.hero-meta{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px}
+.chip-h{border:1px solid rgba(246,242,233,.22);border-radius:999px;padding:5px 13px;font-size:13.5px;color:var(--hero-ink);background:rgba(246,242,233,.05)}
+.arch{position:relative;border-radius:200px 200px 22px 22px;padding:46px 26px 26px;background:linear-gradient(180deg,rgba(246,242,233,.10),rgba(246,242,233,.03));border:1px solid rgba(224,188,118,.35);box-shadow:inset 0 0 0 6px rgba(224,188,118,.06)}
+.arch .k{font-size:13px;color:var(--hero-mute);text-align:center}
+.arch .big{font-size:clamp(44px,6vw,64px);font-weight:900;text-align:center;line-height:1.1;color:#E0BC76;margin-top:4px}
+.arch .big small{font-size:.38em;font-weight:700;color:var(--hero-ink);margin-inline-start:6px}
+.arch .sub{text-align:center;font-size:14.5px;color:var(--hero-mute);margin-top:6px}
+.ruler{margin-top:26px;position:relative;height:72px}
+.ruler .track{position:absolute;inset-inline:0;top:30px;height:8px;border-radius:8px;background:rgba(246,242,233,.12);overflow:hidden}
+.ruler .fill{position:absolute;inset-block:0;right:0;width:5.95%;background:linear-gradient(270deg,#E0BC76,#C99A4A);border-radius:8px}
+.ruler .fill2{position:absolute;inset-block:0;right:5.95%;width:2.45%;background:repeating-linear-gradient(135deg,rgba(224,188,118,.65) 0 3px,transparent 3px 6px)}
+.ruler .tick{position:absolute;top:44px;font-size:12px;color:var(--hero-mute);transform:translateX(50%);white-space:nowrap}
+.ruler .tick::before{content:"";position:absolute;top:-8px;left:50%;width:1px;height:6px;background:rgba(246,242,233,.35)}
+.ruler .pin{position:absolute;top:0;font-size:12px;font-weight:700;color:#E0BC76;transform:translateX(50%);white-space:nowrap}
+.ruler .pin.p2{top:12px;color:var(--hero-mute);font-weight:500}
+
+/* ===== sections ===== */
+section{scroll-margin-top:72px}
+.sec{padding-block:72px}
+.sec.alt{background:var(--paper-2)}
+.sec-head{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 18px;align-items:start;margin-bottom:34px}
+.sec-head>*{grid-column:2}
+.sec-head>.sec-no{grid-column:1;grid-row:1/4;width:52px;height:52px;display:grid;place-items:center;position:relative;color:var(--gold);font-weight:800;font-size:17px}
+.sec-no svg{position:absolute;inset:0}
+.sec-head h2{font-size:clamp(26px,3.2vw,36px);font-weight:800;color:var(--ink)}
+.sec-head p{color:var(--ink-2);font-size:17.5px;max-width:70ch}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--teal);margin-bottom:6px}
+.prose{max-width:68ch;color:var(--ink-2)}
+.prose p+p{margin-top:12px}
+.thesis{position:relative;margin-block:8px 34px;padding:22px 26px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+.thesis .q{font-size:20px;font-weight:700;line-height:1.6}
+.thesis .q b{color:var(--teal)}
+.thesis .seal{width:58px;height:58px;color:var(--gold)}
+
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;min-width:0}
+.card h3{font-size:19px;font-weight:700}
+.card h4{font-size:16.5px;font-weight:700}
+.muted{color:var(--muted)}
+.small{font-size:14px;line-height:1.7}
+.src{font-size:13px;color:var(--muted);margin-top:12px}
+.src::before{content:"المصدر · ";color:var(--gold);font-weight:700}
+
+/* ===== entity map ===== */
+.map{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:"uni uni waqf waqf" "saq saq fund cash";gap:72px 18px}
+.map svg.wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.wires path{fill:none;stroke:var(--muted);stroke-width:1.6}
+.wires path.own{stroke:var(--teal);stroke-width:2}
+.wires path.miss{stroke:var(--rust);stroke-dasharray:6 6;stroke-width:2}
+.wires text{font:600 12.5px var(--f-body);fill:var(--ink-2)}
+.wires text.miss{fill:var(--rust)}
+.wires rect{fill:var(--paper)}
+.node{position:relative;z-index:1;text-align:right;font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .2s;min-width:0}
+.node:hover{border-color:var(--teal);transform:translateY(-1px)}
+.node[aria-pressed="true"]{border-color:var(--teal);box-shadow:0 0 0 3px var(--teal-soft),var(--shadow)}
+.node .role{font-size:12.5px;font-weight:700;color:var(--gold);letter-spacing:.03em}
+.node .nm{display:block;font-size:18px;font-weight:800;margin-top:2px}
+.node .fig{display:block;font-size:14.5px;color:var(--ink-2);margin-top:4px}
+.node.n-waqf{background:var(--teal);color:#fff;border-color:transparent}
+.node.n-waqf .role{color:#F2D9A6}.node.n-waqf .fig{color:#E3F1EF}
+.node.n-waqf[aria-pressed="true"]{box-shadow:0 0 0 3px var(--teal-soft),var(--shadow)}
+.node.n-saq{background:var(--rust-soft);border-color:color-mix(in srgb,var(--rust) 40%,transparent)}
+.node .flag{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;color:var(--rust);background:var(--card);border:1px solid color-mix(in srgb,var(--rust) 35%,transparent);border-radius:999px;padding:1px 9px}
+.mob-own{display:none}
+.detail{margin-top:24px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 24px;align-items:end;padding:22px 24px;border-radius:var(--r);background:var(--glass);border:1px solid var(--line)}
+.detail h3{font-size:20px;font-weight:800}
+.detail ul{margin:8px 0 0;padding-inline-start:20px;color:var(--ink-2)}
+.detail li+li{margin-top:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 14.5px var(--f-body);color:var(--teal);background:var(--teal-soft);border:0;border-radius:999px;padding:9px 16px;text-decoration:none;cursor:pointer;white-space:nowrap}
+.btn:hover{filter:brightness(.97)}
+
+/* ===== KPI ===== */
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.kpi{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 20px 16px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s;min-width:0}
+.kpi:hover{border-color:var(--teal);transform:translateY(-2px)}
+.kpi .v{font-size:34px;font-weight:900;line-height:1.15;color:var(--ink)}
+.kpi .v.bad{color:var(--rust)}.kpi .v.good{color:var(--teal)}.kpi .v.gold{color:var(--gold)}
+.kpi .l{font-weight:700;font-size:16px}
+.kpi .d{font-size:14px;color:var(--ink-2);line-height:1.65;flex:1}
+.kpi .go{font-size:13px;color:var(--teal);font-weight:600;margin-top:4px}
+.limits{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.limits .card{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:transparent}
+.ico{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--gold-soft);color:var(--gold)}
+
+/* ===== charts ===== */
+.chart{position:relative;width:100%;min-width:0}
+.chart svg{display:block;width:100%;height:auto;direction:ltr}
+.chart text{font-family:var(--f-body);fill:var(--muted);font-size:12.5px}
+.chart .grid-l{stroke:var(--line);stroke-width:1}
+.chart .zero{stroke:var(--ink-2);stroke-width:1}
+.chart .lbl-v{fill:var(--ink);font-weight:700;font-size:12.5px}
+.c-rev{fill:var(--teal)}.c-gp{fill:var(--sky)}.c-np{fill:var(--gold)}.c-neg{fill:var(--rust)}
+.s-rev{stroke:var(--teal)}.s-gp{stroke:var(--sky)}.s-np{stroke:var(--gold)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;color:var(--ink-2);margin-bottom:10px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}
+.legend i.ln{height:3px;border-radius:2px;width:16px;vertical-align:3px}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:13px;padding:6px 10px;border-radius:8px;white-space:nowrap;transform:translate(50%,-110%);opacity:0;transition:opacity .12s;z-index:5}
+
+/* events list */
+.events{display:grid;gap:12px;margin-top:6px}
+.ev{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.ev .tag{font-size:12.5px;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--sky-soft);color:var(--ink);white-space:nowrap;margin-top:3px}
+
+/* segmented + tables */
+.seg{display:inline-flex;gap:4px;background:var(--line-2);border:1px solid var(--line);padding:4px;border-radius:999px;flex-wrap:wrap}
+.seg button{font:600 14px var(--f-body);color:var(--ink-2);background:transparent;border:0;border-radius:999px;padding:6px 14px;cursor:pointer}
+.seg button[aria-selected="true"],.seg button[aria-pressed="true"]{background:var(--card);color:var(--teal);box-shadow:var(--shadow)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--line-2);vertical-align:top}
+thead th{font-size:13px;font-weight:700;color:var(--muted);background:var(--paper);position:sticky;top:0;white-space:nowrap}
+td.n,th.n{text-align:left;direction:ltr;white-space:nowrap}
+tr.tot td{font-weight:800;background:color-mix(in srgb,var(--teal-soft) 45%,transparent)}
+tr:last-child td{border-bottom:0}
+.up{color:var(--teal);font-weight:700}.dn{color:var(--rust);font-weight:700}
+.foot{font-size:13px;color:var(--muted);margin-top:10px}
+
+/* verdict chips */
+.v-chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:2px 10px;border-radius:999px;white-space:nowrap}
+.v-chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.v-bad{background:var(--rust-soft);color:var(--rust)}
+.v-watch{background:var(--gold-soft);color:var(--gold)}
+.v-good{background:var(--teal-soft);color:var(--teal)}
+.v-none{background:var(--line-2);color:var(--ink-2)}
+.axis-cell{font-weight:800;color:var(--ink)}
+.tally{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+
+/* waterfall note */
+.bridge-note{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.bridge-note div{border-top:2px solid var(--line);padding-top:8px;font-size:14px;color:var(--ink-2)}
+.bridge-note b{display:block;color:var(--ink);font-size:18px}
+
+/* fund */
+.obs{display:grid;gap:12px;counter-reset:o}
+.ob{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.ob::before{counter-increment:o;content:counter(o);grid-row:span 2;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;background:var(--gold-soft);color:var(--gold)}
+.ob h4{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ob p{color:var(--ink-2);font-size:15px}
+.gap-viz{display:grid;gap:10px;margin-top:6px}
+.gbar{display:grid;grid-template-columns:110px 1fr auto;gap:12px;align-items:center;font-size:14px}
+.gbar .t{height:26px;border-radius:7px;background:var(--line-2);position:relative;overflow:hidden}
+.gbar .t span{position:absolute;inset-block:0;right:0;border-radius:7px}
+.read3{display:grid;gap:10px}
+.r3{display:grid;grid-template-columns:minmax(0,1.3fr) 70px minmax(0,1fr);gap:12px;align-items:center;padding:12px 14px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:14.5px}
+.r3 .pc{font-size:20px;font-weight:900;text-align:center}
+.callout{padding:18px 20px;border-radius:var(--r);background:var(--gold-soft);border:1px solid color-mix(in srgb,var(--gold) 30%,transparent);color:var(--ink)}
+.callout b{color:var(--gold)}
+
+/* axes */
+.axes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.axes .card{display:flex;flex-direction:column;gap:8px}
+.axes .hd{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* model */
+.model{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:22px;align-items:start}
+.controls{display:grid;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.ctl label{display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:15px}
+.ctl label output{color:var(--teal);font-weight:800}
+.ctl .hint{font-size:13px;color:var(--muted)}
+input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
+.presets{display:flex;flex-wrap:wrap;gap:6px}
+.presets button{font:600 13px var(--f-body);border:1px solid var(--line);background:transparent;color:var(--ink-2);padding:5px 11px;border-radius:999px;cursor:pointer}
+.presets button:hover{border-color:var(--teal);color:var(--teal)}
+.out{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.out div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.out .k{font-size:13px;color:var(--muted)}
+.out .v{font-size:26px;font-weight:900;line-height:1.2}
+.scen{display:grid;gap:10px}
+.sc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2fr) 64px;gap:12px;align-items:center;font-size:14.5px;background:transparent;border:0;padding:6px 4px;border-radius:10px;cursor:pointer;color:inherit;font-family:inherit;text-align:right;width:100%}
+.sc:hover{background:var(--line-2)}
+.sc .t{height:22px;background:var(--line-2);border-radius:6px;position:relative}
+.sc .t span{position:absolute;inset-block:0;right:0;border-radius:6px;background:color-mix(in srgb,var(--teal) 55%,transparent)}
+.sc.hit .t span{background:var(--teal)}
+.sc .t::after{content:"";position:absolute;inset-block:-4px;left:0;border-left:2px dashed var(--rust)}
+.sc b{text-align:left;direction:ltr}
+
+/* matrix */
+.matrix{display:grid;grid-template-columns:90px repeat(2,minmax(0,1fr));gap:10px}
+.matrix .ax{font-size:13px;font-weight:700;color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center}
+.matrix .cell{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.matrix .cell.pick{border:2px solid var(--rust);box-shadow:0 0 0 4px var(--rust-soft)}
+.matrix .cell h4{font-size:16px}
+.matrix .cell p{font-size:14px;color:var(--ink-2);margin-top:4px}
+.matrix .pick .badge{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;color:var(--rust)}
+
+/* plan */
+.gaps3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:26px}
+.gap3{background:var(--hero);color:var(--hero-ink);border-radius:var(--r);padding:20px;position:relative;overflow:hidden}
+.gap3.pattern::before{color:var(--hero-ink);opacity:.05}
+.gap3 .n{color:#E0BC76;font-weight:900;font-size:28px;line-height:1}
+.gap3 h3{font-size:18px;margin-top:8px;position:relative}
+.gap3 p{font-size:14.5px;color:var(--hero-mute);margin-top:6px;position:relative}
+.steps{display:grid;gap:12px}
+.step{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,2fr) minmax(0,1fr);gap:14px 22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.step .gp{font-weight:800}
+.step .act{color:var(--ink-2);font-size:15px}
+.step dl{margin:0;display:grid;gap:6px;font-size:14px}
+.step dt{color:var(--muted);font-size:12.5px}
+.step dd{margin:0;font-weight:600}
+.when{display:inline-block;background:var(--sky-soft);border-radius:999px;padding:0 10px;font-weight:700}
+
+/* tabs */
+.tabs{display:flex;gap:6px;overflow-x:auto;border-bottom:1px solid var(--line);margin-bottom:24px;scrollbar-width:thin}
+.tabs button{flex:none;font:700 15px var(--f-body);color:var(--ink-2);background:transparent;border:0;border-bottom:3px solid transparent;padding:10px 14px 12px;cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--teal);border-bottom-color:var(--teal)}
+.tabs button:hover{color:var(--ink)}
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.mem{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:8px}
+.mem .top{display:flex;gap:12px;align-items:center}
+.avatar{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:var(--teal);background:var(--teal-soft);border:1px solid color-mix(in srgb,var(--teal) 25%,transparent)}
+.mem .nm{font-weight:800;font-size:17px;line-height:1.3}
+.mem .rl{font-size:13.5px;color:var(--gold);font-weight:700}
+.mem p{font-size:14.5px;color:var(--ink-2)}
+.mem .due{font-size:13px;color:var(--muted);margin-top:auto}
+.mem .lk{font-size:13px}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.filters button{font:600 13.5px var(--f-body);border:1px solid var(--line);background:var(--card);color:var(--ink-2);padding:5px 12px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;direction:ltr;display:inline-block;color:var(--gold);font-weight:700}
+.miss-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.miss-list div{display:flex;gap:10px;align-items:center;padding:10px 14px;border:1px dashed color-mix(in srgb,var(--rust) 45%,transparent);border-radius:12px;background:var(--card);font-size:14.5px}
+.tl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative}
+.yr{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 18px;position:relative}
+.yr .y{font-size:22px;font-weight:900;color:var(--gold)}
+.yr .a{font-size:13px;color:var(--muted)}
+.yr ul{margin:8px 0 0;padding-inline-start:18px;font-size:14.5px;color:var(--ink-2)}
+.yr li+li{margin-top:4px}
+.yr .amt{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:13.5px}
+.yr .amt b{display:block;font-size:19px;color:var(--teal)}
+.targets{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.targets div{text-align:center;padding:14px 8px;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.targets b{display:block;font-size:24px;font-weight:900;color:var(--teal);line-height:1.2}
+.targets span{font-size:13.5px;color:var(--ink-2)}
+.status-list{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.status-list li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:15px}
+.dot{width:10px;height:10px;border-radius:50%;margin-top:9px}
+.dot.ok{background:var(--teal)}.dot.wn{background:var(--gold)}.dot.bd{background:var(--rust)}
+
+/* notes footer */
+.notes{background:var(--hero);color:var(--hero-ink);position:relative;overflow:hidden}
+.notes.pattern::before{color:var(--hero-ink);opacity:.04}
+.notes .wrap{position:relative;padding-block:64px 40px}
+.notes h2{font-size:clamp(24px,3vw,32px);font-weight:800}
+.notes .intro{color:var(--hero-mute);margin-top:8px;max-width:70ch}
+.nlist{margin-top:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px;list-style:none;padding:0;counter-reset:n}
+.nlist li{display:grid;grid-template-columns:34px 1fr;gap:10px;padding-block:12px;border-top:1px solid rgba(246,242,233,.12);font-size:15px;color:#D9E2E8;line-height:1.75}
+.nlist li::before{counter-increment:n;content:counter(n,decimal-leading-zero);color:#E0BC76;font-weight:800;font-size:14px;padding-top:2px}
+.nlist b{color:var(--hero-ink)}
+.nlist a{color:#E0BC76}
+.colophon{margin-top:40px;padding-top:24px;border-top:1px solid rgba(246,242,233,.16);display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px;font-size:14px;color:var(--hero-mute)}
+.colophon h4{color:var(--hero-ink);font-size:15px;margin-bottom:6px}
+.colophon ul{list-style:none;margin:0;padding:0;display:grid;gap:3px}
+.totop{position:fixed;left:max(16px,calc(env(safe-area-inset-left,0px) + 12px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(8px);color:var(--ink);font-size:18px;cursor:pointer;box-shadow:var(--shadow);text-decoration:none;display:grid;place-items:center}
+
+/* responsive */
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:28px}
+  .arch{max-width:460px;width:100%;margin-inline:auto}
+  .kpis,.axes,.team,.g3,.gaps3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .model{grid-template-columns:1fr}
+  .colophon{grid-template-columns:1fr 1fr}
+  .tl{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .targets{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .step{grid-template-columns:1fr 1fr}.step .act{grid-column:1/-1;grid-row:2}
+  #fund-grid{grid-template-columns:1fr!important}
+}
+@media (max-width:680px){
+  body{font-size:16px}
+  .sec{padding-block:52px}
+  .map{grid-template-columns:1fr;grid-template-areas:"waqf" "uni" "saq" "fund" "cash";gap:10px}
+  .map svg.wires{display:none}
+  .mob-own{display:block;font-size:12.5px;color:var(--muted);margin-top:6px}
+  .n-waqf .mob-own{color:#E3F1EF}
+  .kpis,.axes,.team,.g2,.g3,.gaps3,.limits,.nlist,.miss-list,.tl{grid-template-columns:1fr}
+  .targets{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .detail{grid-template-columns:1fr}
+  .thesis{grid-template-columns:1fr}.thesis .seal{display:none}
+  .out{grid-template-columns:1fr 1fr}.out div:last-child{grid-column:1/-1}
+  .step{grid-template-columns:1fr}.step .act{grid-column:auto;grid-row:auto}
+  .bridge-note{grid-template-columns:1fr}
+  .r3{grid-template-columns:1fr 60px}.r3 .ef{grid-column:1/-1}
+  .sc{grid-template-columns:1fr 54px}.sc .t{grid-column:1/-1;grid-row:2}
+  .colophon{grid-template-columns:1fr}
+  .matrix{grid-template-columns:1fr}.matrix .ax.side{justify-content:flex-start}.matrix .ax.blank{display:none}
+  .gbar{grid-template-columns:88px 1fr auto}
+  .brand span{display:none}
+}
+</style>
+
+<a class="skip" href="#main">تخطّ إلى المحتوى</a>
+
+<header class="bar" aria-label="محطات العرض">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="بداية الصفحة">
+      <svg width="28" height="28" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 L25 15 L37 20 L25 25 L20 37 L15 25 L3 20 L15 15Z" style="fill:none;stroke:var(--gold)" stroke-width="2"/><circle cx="20" cy="20" r="4.5" style="fill:var(--teal)"/></svg>
+      <span>تحدي المليار الوقفي</span>
+    </a>
+    <nav class="route" id="route">
+      <a href="#entity"><i class="st"></i>التعريف</a>
+      <a href="#summary"><i class="st"></i>الخلاصة</a>
+      <a href="#saqifa"><i class="st"></i>شركة السقيفة</a>
+      <a href="#ratios"><i class="st"></i>المؤشرات</a>
+      <a href="#fund"><i class="st"></i>الصندوق الوقفي</a>
+      <a href="#model"><i class="st"></i>نموذج المليار</a>
+      <a href="#plan"><i class="st"></i>الفجوات والخطة</a>
+      <a href="#files"><i class="st"></i>ملف المشروع</a>
+      <a href="#notes"><i class="st"></i>ملاحظات الفريق</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero pattern" id="top" aria-labelledby="h-title">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span>الزمالة السعودية في الاستثمار وتنمية الأصول لدى الجمعيات الأهلية</span><span aria-hidden="true">◆</span><span>مشروع التخرج</span></div>
+      <h1 id="h-title">وقف الجامعة الإسلامية<br>على طريق <em>المليار</em></h1>
+      <p class="lede">التحليل المالي والاستثماري لوقف الجامعة الإسلامية بالمدينة المنورة وشركة السقيفة لتطوير الأعمال: قراءة القوائم المالية 2023–2025، وقياس العائد والمخاطر والسيولة، ونموذج مالي أولي لبلوغ مليار ريال خلال عشر سنوات.</p>
+      <div class="hero-meta">
+        <span class="chip-h">إعداد فريق المشروع</span>
+        <span class="chip-h">المخيم القيادي · 5–7 نوفمبر 2026</span>
+        <span class="chip-h">الأرقام بالريال السعودي · م = مليون</span>
+      </div>
+    </div>
+    <div class="arch" role="img" aria-label="أصول الوقف الدفترية 59.5 مليون ريال تمثل نحو 6 بالمئة من هدف المليار">
+      <div class="k">أصول الوقف الدفترية في 31 ديسمبر 2025</div>
+      <div class="big num">59.5<small>مليون</small></div>
+      <div class="sub">نحو <b class="num">6٪</b> من الطريق إلى المليار · والنمو السنوي اللازم <b class="num">32.6٪</b></div>
+      <div class="ruler" aria-hidden="true">
+        <div class="pin" style="right:5.95%">59.5</div>
+        <div class="track"><div class="fill"></div><div class="fill2"></div></div>
+        <div class="tick" style="right:0%">0</div>
+        <div class="tick" style="right:25%">250</div>
+        <div class="tick" style="right:50%">500</div>
+        <div class="tick" style="right:75%">750</div>
+        <div class="tick" style="right:100%">1,000 م</div>
+      </div>
+      <div class="sub" style="margin-top:4px;font-size:13px">الجزء المخطط يمتد إلى 84 م، الرقم المعلن قيد المطابقة</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 1. ENTITY ================= -->
+<section class="sec" id="entity" aria-labelledby="h-entity">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>١</div>
+      <div class="kicker">التعريف</div>
+      <h2 id="h-entity">ثلاث وحدات مترابطة، ولكلٍّ منها قوائمها</h2>
+      <p>الجامعة الإسلامية تشرف على الوقف وتشاركه ملكية شركة السقيفة. والوقف يستثمر معظم أصوله عبر صندوق خارجي. لا توجد حتى الآن صورة مالية موحّدة تجمع الوحدات الثلاث.</p>
+    </div>
+
+    <div class="map" id="map">
+      <svg class="wires" id="wires" aria-hidden="true"></svg>
+      <button class="node" style="grid-area:uni" data-id="uni" aria-pressed="false">
+        <span class="role">الجهة المشرفة · شريك 51٪</span>
+        <span class="nm">الجامعة الإسلامية بالمدينة المنورة</span>
+        <span class="fig">تملك وتشرف على الوقف وشركة السقيفة وفق اللوائح المنظمة</span>
+      </button>
+      <button class="node n-waqf" style="grid-area:waqf" data-id="waqf" aria-pressed="true">
+        <span class="role">الكيان محل الدراسة · شريك 49٪</span>
+        <span class="nm">وقف الجامعة الإسلامية</span>
+        <span class="fig">أصول دفترية <b class="num">59.5 م</b> · مرخّص من الهيئة العامة للأوقاف</span>
+      </button>
+      <button class="node n-saq" style="grid-area:saq" data-id="saq" aria-pressed="false">
+        <span class="role">الذراع الاستثمارية والتشغيلية</span>
+        <span class="nm">شركة السقيفة لتطوير الأعمال</span>
+        <span class="fig">إيرادات <b class="num">25.9 م</b> · حقوق <b class="num">2.08 م</b> · قروض <b class="num">10 م</b></span>
+        <span class="flag">حصة الوقف غير مقيدة في قوائمه</span>
+        <span class="mob-own">مملوكة 51٪ للجامعة (51,000 ريال) و49٪ للوقف (49,000 ريال)</span>
+      </button>
+      <button class="node" style="grid-area:fund" data-id="fund" aria-pressed="false">
+        <span class="role">95٪ من أصول الوقف</span>
+        <span class="nm">صندوق منصة إحسان</span>
+        <span class="fig"><b class="num">56.4 م</b> · عائد مسجل: صفر</span>
+        <span class="mob-own">استثمار الوقف</span>
+      </button>
+      <button class="node" style="grid-area:cash" data-id="cash" aria-pressed="false">
+        <span class="role">5٪ من أصول الوقف</span>
+        <span class="nm">نقد الوقف</span>
+        <span class="fig"><b class="num">3.08 م</b> · ارتفع 2.63 م في 2025</span>
+        <span class="mob-own">حسابات الوقف البنكية</span>
+      </button>
+    </div>
+
+    <div class="detail" id="detail" aria-live="polite"></div>
+    <p class="src">إيضاح رأس المال في قوائم السقيفة المراجعة 2025، ومسودتا قوائم الوقف 2024 و2025، وتعريف الكيانات المعدّ من الفريق.</p>
+
+    <div class="thesis" style="margin-top:34px">
+      <svg class="seal" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 3 L37 18 L54 14 L46 30 L54 46 L37 42 L30 57 L23 42 L6 46 L14 30 L6 14 L23 18Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="30" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      <div>
+        <div class="kicker">التحدي الذي يعمل عليه الفريق</div>
+        <p class="q">كيف يصل وقف الجامعة الإسلامية إلى <b>مليار ريال خلال عشر سنوات</b> من خلال تنويع الأصول ورفع قوتها وجودتها؟</p>
+        <p class="muted small" style="margin-top:6px">الهدف: تحويل توصيات المشروع إلى خطوات تُنفَّذ على أرض الواقع بإذن الله.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. SUMMARY ================= -->
+<section class="sec alt" id="summary" aria-labelledby="h-sum">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٢</div>
+      <div class="kicker">الخلاصة التنفيذية</div>
+      <h2 id="h-sum">أصول تتجاوز 60 مليونًا، وذراع تشغيلية تنمو بسرعة</h2>
+      <p>ستة أرقام تختصر الوضع الراهن. كل بطاقة تقود إلى القسم الذي يشرحها.</p>
+    </div>
+
+    <div class="thesis">
+      <svg class="seal" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 3 L37 18 L54 14 L46 30 L54 46 L37 42 L30 57 L23 42 L6 46 L14 30 L6 14 L23 18Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="30" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      <p class="q">المليار تحدٍّ منطقي إذا عُرّف <b>هدفًا لتنمية الأصول</b> لا هدفًا لعائد الاستثمار؛ فالعائد وحده يبلغ بنا نحو 117 مليونًا، والفارق تصنعه الأوقاف الجديدة والاستحواذ العقاري.</p>
+    </div>
+
+    <div class="kpis">
+      <a class="kpi" href="#saqifa">
+        <span class="v good num">25.9 م</span><span class="l">إيرادات السقيفة في 2025</span>
+        <span class="d">نمو 169٪ عن 2024، بعد 3.9 م في الفترة الأولى (15 شهرًا). تحقق المسار المستهدف: 3 ← 10 ← 25 مليونًا.</span>
+        <span class="go">← نمو الإيرادات والربحية</span>
+      </a>
+      <a class="kpi" href="#ratios">
+        <span class="v bad num">23.8٪</span><span class="l">هامش مجمل الربح في 2025</span>
+        <span class="d">تراجع من 42.9٪ في 2024 مع تحوّل المزيج إلى عقود الخدمات، ونمو التكلفة 259٪ مقابل 169٪ للإيراد.</span>
+        <span class="go">← مؤشرات العائد والمخاطر</span>
+      </a>
+      <a class="kpi" href="#bridge">
+        <span class="v bad num"><span class="ltr">(3.74)</span> م</span><span class="l">التدفق النقدي التشغيلي للسقيفة</span>
+        <span class="d">ربح دفتري 1.52 م لم يتحول إلى نقد. الذمم المدينة قفزت إلى 8.1 م (114 يوم تحصيل)، وموّل قرض جديد بـ7 م العجز.</span>
+        <span class="go">← من الربح إلى النقد</span>
+      </a>
+      <a class="kpi" href="#fund">
+        <span class="v gold num">صفر</span><span class="l">العائد المسجل على 56.4 م في صندوق إحسان</span>
+        <span class="d">لم تسجل قوائم الوقف عائدًا في سنتين. نقدّر أن العائد الفعلي قد يقارب 2.6 م (4.7٪) إن كانت زيادة النقد توزيعات من الصندوق، وهذا يحتاج تأكيدًا.</span>
+        <span class="go">← الصندوق الوقفي</span>
+      </a>
+      <a class="kpi" href="#entity">
+        <span class="v gold num">0 ريال</span><span class="l">غلة السقيفة الموزعة على الوقف</span>
+        <span class="d">يملك الوقف 49٪ ونصيبه من ربح 2025 قرابة 0.75 م، لكن الأرباح مبقاة في الشركة بتوصية مجلس المديرين.</span>
+        <span class="go">← خريطة الكيان</span>
+      </a>
+      <a class="kpi" href="#model">
+        <span class="v num">32.6٪</span><span class="l">النمو السنوي اللازم لبلوغ المليار</span>
+        <span class="d">من الأساس الدفتري 59.5 م. لا يوجد عائد استثماري يحقق ذلك، فالمليار يحتاج محركات نمو غير العائد: أوقاف جديدة واستحواذات.</span>
+        <span class="go">← نموذج المليار التفاعلي</span>
+      </a>
+    </div>
+
+    <div class="limits">
+      <div class="card">
+        <span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg></span>
+        <div><h4>قوائم السقيفة: مراجعة برأي نظيف</h4><p class="small muted">ثلاث فترات راجعها مكتب السديس محاسبون قانونيون. الفترة الأولى 15 شهرًا (27 سبتمبر 2022 – 31 ديسمبر 2023)، فلا تُقارن مباشرة بما بعدها.</p></div>
+      </div>
+      <div class="card">
+        <span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L2 18a2 2 0 001.7 3h16.6a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg></span>
+        <div><h4>قوائم الوقف: مسودات غير مراجعة</h4><p class="small muted">قوائم 2024 و2025 مسودات، ويتعامل معها الفريق مؤشرًا لا مرجعًا نهائيًا إلى أن تصدر مراجَعة.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. SAQIFA ================= -->
+<section class="sec" id="saqifa" aria-labelledby="h-saq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٣</div>
+      <div class="kicker">شركة السقيفة لتطوير الأعمال</div>
+      <h2 id="h-saq">نمو سريع في الإيراد، وضغط على الهامش والنقد</h2>
+      <p>تضاعفت الإيرادات أكثر من ست مرات خلال ثلاث فترات، بينما تراجع الهامش وتحوّل جزء كبير من الربح إلى ذمم مدينة.</p>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <h3>الإيرادات ومجمل الربح وصافي الربح</h3>
+        <p class="small muted">مليون ريال · صافي الربح قبل الزكاة</p>
+        <div class="legend" style="margin-top:10px"><span><i class="c-rev" style="background:var(--teal)"></i>الإيرادات</span><span><i style="background:var(--sky)"></i>مجمل الربح</span><span><i style="background:var(--gold)"></i>صافي الربح</span></div>
+        <div class="chart" id="ch-bars"></div>
+        <p class="src">قوائم الدخل المراجعة. الفترة الأولى 15 شهرًا.</p>
+      </div>
+      <div class="card">
+        <h3>هامشا مجمل الربح وصافي الربح</h3>
+        <p class="small muted">نسبة من الإيرادات</p>
+        <div class="legend" style="margin-top:10px"><span><i class="ln" style="background:var(--sky)"></i>هامش مجمل الربح</span><span><i class="ln" style="background:var(--gold)"></i>هامش صافي الربح</span></div>
+        <div class="chart" id="ch-margins"></div>
+        <p class="src">محسوب من قوائم الدخل المراجعة.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>ماذا حدث في 2025؟</h3>
+      <div class="events" style="margin-top:12px">
+        <div class="ev"><span class="tag">تحوّل المزيج</span><p>صارت عقود الخدمات 76٪ من الإيراد (20.0 م) مقابل 40٪ في 2024، ونمت تكلفة الإيراد 259٪ مقابل 169٪ للإيراد.</p></div>
+        <div class="ev"><span class="tag">الإهلاك</span><p>أُضيفت معدات بنحو 4.4 م، وحُمّل إهلاك 1.42 م على المصاريف العمومية لا على التكلفة. لو حُمّل إهلاك المعدات (1.32 م) على التكلفة لانخفض هامش مجمل الربح إلى 18.7٪.</p></div>
+        <div class="ev"><span class="tag">رافعة تشغيلية</span><p>انخفضت الرواتب إلى 6.3٪ من الإيراد بعد أن كانت 53٪ في الفترة الأولى، وهذا مؤشر إيجابي على قدرة الشركة على التوسع.</p></div>
+      </div>
+    </div>
+
+    <div class="card" id="bridge" style="margin-top:18px;scroll-margin-top:80px">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline">
+        <h3>من الربح إلى النقد في 2025</h3>
+        <span class="small muted">مليون ريال · قائمة التدفقات النقدية المراجعة</span>
+      </div>
+      <p class="small muted" style="margin-top:4px;max-width:70ch">ربح قبل الزكاة 1.58 م تحوّل إلى تدفق تشغيلي سالب بعد أن ابتلعت الذمم المدينة 7.34 م، ثم جاء القرض الجديد ليغطي العجز وشراء المعدات.</p>
+      <div class="chart" id="ch-bridge" style="margin-top:12px"></div>
+      <div class="bridge-note">
+        <div><b class="num"><span class="ltr">(3.74)</span> م</b>صافي النقد من الأنشطة التشغيلية</div>
+        <div><b class="num"><span class="ltr">(4.98)</span> م</b>إضافات الممتلكات والمعدات</div>
+        <div><b class="num">+7.10 م</b>تمويل: قرض 7 م واسترداد 0.1 م من أطراف ذات علاقة</div>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+      <h3 style="font-size:20px">القوائم المقارنة</h3>
+      <div class="seg" role="tablist" aria-label="اختيار القائمة">
+        <button role="tab" id="st-bs" aria-selected="true" aria-controls="tb-bs">المركز المالي</button>
+        <button role="tab" id="st-is" aria-selected="false" aria-controls="tb-is">قائمة الدخل</button>
+      </div>
+    </div>
+    <p class="small muted" style="margin-block:4px 12px">شركة برأس مال 100 ألف ريال ودين 10 ملايين.</p>
+    <div class="tbl-wrap" id="tb-bs" role="tabpanel" aria-labelledby="st-bs">
+      <table>
+        <thead><tr><th>البند</th><th class="n">2022–2023*</th><th class="n">2024</th><th class="n">2025</th><th class="n">تغير 2025</th></tr></thead>
+        <tbody>
+          <tr><td>النقد</td><td class="n">2,381,244</td><td class="n">3,662,925</td><td class="n">2,043,919</td><td class="n dn">−44٪</td></tr>
+          <tr><td>المدينون التجاريون</td><td class="n">90,945</td><td class="n">773,505</td><td class="n">8,113,624</td><td class="n dn">+949٪</td></tr>
+          <tr><td>مصاريف مقدمة وأرصدة مدينة</td><td class="n">23,225</td><td class="n">37,620</td><td class="n">366,608</td><td class="n">+875٪</td></tr>
+          <tr><td>المخزون</td><td class="n">92,429</td><td class="n">130,454</td><td class="n">81,279</td><td class="n">−38٪</td></tr>
+          <tr><td>مستحق من أطراف ذات علاقة</td><td class="n">100,000</td><td class="n">100,000</td><td class="n">0</td><td class="n">−100٪</td></tr>
+          <tr class="tot"><td>الأصول المتداولة</td><td class="n">2,687,843</td><td class="n">4,704,504</td><td class="n">10,605,430</td><td class="n">+125٪</td></tr>
+          <tr><td>ممتلكات ومعدات وأصول غير ملموسة</td><td class="n">33,390</td><td class="n">402,691</td><td class="n">3,961,227</td><td class="n">+884٪</td></tr>
+          <tr class="tot"><td>إجمالي الأصول</td><td class="n">2,721,233</td><td class="n">5,107,195</td><td class="n">14,566,657</td><td class="n">+185٪</td></tr>
+          <tr><td>الالتزامات المتداولة</td><td class="n">522,078</td><td class="n">1,484,294</td><td class="n">2,374,718</td><td class="n">+60٪</td></tr>
+          <tr><td>قروض طويلة الأجل</td><td class="n">3,000,000</td><td class="n">3,000,000</td><td class="n">10,000,000</td><td class="n dn">+233٪</td></tr>
+          <tr><td>مكافأة نهاية الخدمة</td><td class="n">44,248</td><td class="n">61,889</td><td class="n">109,142</td><td class="n">+76٪</td></tr>
+          <tr class="tot"><td>إجمالي الالتزامات</td><td class="n">3,566,326</td><td class="n">4,546,183</td><td class="n">12,483,860</td><td class="n">+175٪</td></tr>
+          <tr class="tot"><td>حقوق الشركاء</td><td class="n">(845,093)</td><td class="n">561,012</td><td class="n">2,082,797</td><td class="n up">+271٪</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tbl-wrap" id="tb-is" role="tabpanel" aria-labelledby="st-is" hidden>
+      <table>
+        <thead><tr><th>البند</th><th class="n">2022–2023*</th><th class="n">2024</th><th class="n">2025</th><th class="n">تغير 2025</th></tr></thead>
+        <tbody>
+          <tr class="tot"><td>الإيرادات</td><td class="n">3,924,034</td><td class="n">9,631,130</td><td class="n">25,912,527</td><td class="n up">+169٪</td></tr>
+          <tr><td>عقود الخدمات</td><td class="n">1,703,918</td><td class="n">3,834,638</td><td class="n">20,010,523</td><td class="n up">+422٪</td></tr>
+          <tr><td>عقود المشاريع</td><td class="n">2,258,559</td><td class="n">5,849,299</td><td class="n">6,173,472</td><td class="n">+6٪</td></tr>
+          <tr><td>مرتجعات المبيعات</td><td class="n">(38,443)</td><td class="n">(52,807)</td><td class="n">(271,468)</td><td class="n">—</td></tr>
+          <tr><td>تكلفة الإيرادات</td><td class="n">(2,056,405)</td><td class="n">(5,495,042)</td><td class="n">(19,747,593)</td><td class="n dn">+259٪</td></tr>
+          <tr class="tot"><td>مجمل الربح</td><td class="n">1,867,629</td><td class="n">4,136,088</td><td class="n">6,164,934</td><td class="n">+49٪</td></tr>
+          <tr><td>مصاريف عمومية وإدارية</td><td class="n">(2,977,144)</td><td class="n">(2,953,523)</td><td class="n">(4,900,271)</td><td class="n">+66٪</td></tr>
+          <tr><td style="padding-inline-start:28px" class="muted">منها: إهلاك وإطفاء</td><td class="n">(9,130)</td><td class="n">(66,412)</td><td class="n">(1,424,024)</td><td class="n">—</td></tr>
+          <tr><td>إيرادات أخرى</td><td class="n">164,422</td><td class="n">238,425</td><td class="n">312,230</td><td class="n">+31٪</td></tr>
+          <tr class="tot"><td>صافي الربح قبل الزكاة</td><td class="n">(945,093)</td><td class="n">1,420,990</td><td class="n">1,576,893</td><td class="n">+11٪</td></tr>
+          <tr><td>الزكاة</td><td class="n">0</td><td class="n">(14,885)</td><td class="n">(55,108)</td><td class="n">—</td></tr>
+          <tr class="tot"><td>صافي الربح بعد الزكاة</td><td class="n">(945,093)</td><td class="n">1,406,105</td><td class="n">1,521,785</td><td class="n">+8٪</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="foot">* الفترة الأولى من 27 سبتمبر 2022 إلى 31 ديسمبر 2023 (15 شهرًا). الأرقام بين قوسين سالبة، ونسبة التغير محسوبة حين يكون البندان موجبين.</p>
+  </div>
+</section>
+
+<!-- ================= 4. RATIOS ================= -->
+<section class="sec alt" id="ratios" aria-labelledby="h-rat">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٤</div>
+      <div class="kicker">مؤشرات العائد والمخاطر والسيولة</div>
+      <h2 id="h-rat">اثنا عشر مؤشرًا لشركة السقيفة، مع حكم أولي</h2>
+      <p>أربعة محاور لثلاث فترات. الحكم مبني على اتجاه المؤشر في 2025 وعلى ما يكشفه عن جودة الربح لا على رقمه وحده.</p>
+    </div>
+    <div class="tally">
+      <div class="filters" id="rat-filter" role="group" aria-label="تصفية المؤشرات" style="margin:0">
+        <button aria-pressed="true" data-f="all">الكل · 12</button>
+        <button aria-pressed="false" data-f="bad">مقلق · 6</button>
+        <button aria-pressed="false" data-f="watch">يُراقب · 3</button>
+        <button aria-pressed="false" data-f="good">سليم · 3</button>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table id="rat-table">
+        <thead><tr><th>المحور</th><th>المؤشر</th><th class="n">2022–2023</th><th class="n">2024</th><th class="n">2025</th><th>الحكم</th><th>قراءة الفريق</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="foot">العائد على حقوق الشركاء لا يُحتسب لعام 2024 لأن متوسط الحقوق سالب. المؤشرات المعتمدة على المتوسطات تبدأ من 2024.</p>
+  </div>
+</section>
+
+<!-- ================= 5. FUND ================= -->
+<section class="sec" id="fund" aria-labelledby="h-fund">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٥</div>
+      <div class="kicker">الصندوق الوقفي</div>
+      <h2 id="h-fund">أصل كبير بلا قياس</h2>
+      <p>تعرض قوائم الوقف الأصول بشكل صحيح تقريبًا، لكنها تخطئ في تصنيف حقوق الوقف وفي قائمة الدخل، ولا تقيس عائد الصندوق.</p>
+    </div>
+
+    <div class="grid" style="grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:22px" id="fund-grid">
+      <div style="display:grid;gap:18px;align-content:start;min-width:0">
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>البند (مسودة غير مراجعة)</th><th class="n">2024</th><th class="n">2025</th><th class="n">التغير</th></tr></thead>
+            <tbody>
+              <tr><td>النقد لدى البنوك</td><td class="n">447,207</td><td class="n">3,082,154</td><td class="n up">+2,634,947</td></tr>
+              <tr><td>استثمارات في صندوق منصة إحسان</td><td class="n">56,404,541</td><td class="n">56,404,541</td><td class="n">0</td></tr>
+              <tr class="tot"><td>إجمالي أصول الوقف</td><td class="n">56,851,748</td><td class="n">59,486,695</td><td class="n">+4.6٪</td></tr>
+              <tr><td>العائد على الاستثمارات (مسجل)</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr>
+              <tr><td>المصروفات ومصاريف النظارة</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" id="gap84">
+          <h3>فجوة الـ84 مليونًا</h3>
+          <p class="small muted" style="margin-block:4px 12px">رقمان للوقف في وثائق المشروع، ولا بد من مطابقتهما قبل أي قرار.</p>
+          <div class="gap-viz">
+            <div class="gbar"><span>أصول الوقف في المسودة</span><span class="t"><span style="width:70.4%;background:var(--teal)"></span></span><b class="num">59.5 م</b></div>
+            <div class="gbar"><span>أداء الصندوق الوقفي المعلن</span><span class="t"><span style="width:100%;background:var(--gold)"></span></span><b class="num">84.5 م</b></div>
+          </div>
+          <div class="callout" style="margin-top:14px">الفرق <b class="num">24.5 م (41٪)</b>. قد يكون صافي قيمة الأصول الحالية للصندوق، أو أصولًا أخرى غير مقيدة، أو تعهدات لم تُحصَّل. اعتماد أيٍّ من الرقمين قبل مطابقته يُضعف الحصافة في القرار الاستثماري، وهي معيار تقييم صريح في دليل الزمالة.</div>
+          <div style="margin-top:16px">
+            <p class="small" style="font-weight:700">نمو أصول الصندوق كما في تقرير الأوقاف</p>
+            <div class="chart" id="ch-fund" style="margin-top:6px"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:18px;align-content:start;min-width:0">
+        <div>
+          <h3 style="font-size:19px;margin-bottom:12px">ملاحظات جوهرية على قوائم الوقف</h3>
+          <div class="obs">
+            <div class="ob"><h4>تصنيف معكوس لحقوق الوقف <span class="v-chip v-bad">عالية</span></h4><p>قُيّد النقد على أنه «رأس مال الوقف الأصلي»، وقُيّدت الاستثمارات (56.4 م) على أنها «ريع محتجز». والصحيح غالبًا عكس ذلك: المبلغ المستثمر هو الأصل الموقوف، والريع هو ما يتولد منه.</p></div>
+            <div class="ob"><h4>الإيراد نفسه مسجل مرتين <span class="v-chip v-bad">عالية</span></h4><p>ظهرت تبرعات 56.4 م إيرادًا في قائمة دخل 2024 ثم مرة أخرى في 2025، و«إجمالي دخل الوقف» يساوي إجمالي الأصول في السنتين. قائمة الدخل بهذه الصورة رصيد تراكمي لا أداء سنوي.</p></div>
+            <div class="ob"><h4>القوائم غير متوازنة <span class="v-chip v-bad">عالية</span></h4><p>في 2024: الأصول <span class="num">56,851,748</span>، وإجمالي أموال الوقف <span class="num">56,404,541</span>، وإجمالي الالتزامات وأموال الوقف <span class="num">56,854,748</span>. ثلاثة أرقام مختلفة لما يجب أن يتساوى.</p></div>
+            <div class="ob"><h4>حصة الـ49٪ في السقيفة غائبة <span class="v-chip v-bad">عالية</span></h4><p>نصيب الوقف من حقوق السقيفة يقارب 1.02 م دفتريًا، ولا يظهر في أصول الوقف. <a href="#entity">انظر خريطة الكيان</a>.</p></div>
+            <div class="ob"><h4>لا تقييم للصندوق <span class="v-chip v-watch">متوسطة</span></h4><p>ثبات الرقم سنتين يعني أن الوحدات مقيدة بالتكلفة لا بصافي قيمة الأصول. زيادة النقد 2.63 م في 2025 تعادل 4.7٪ من قيمة الصندوق، وقد تكون توزيعات منه قُيّدت «ريع تبرعات». هذا افتراض يحتاج تأكيدًا.</p></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>العائد مقابل التضخم: ثلاث قراءات</h3>
+          <p class="small muted" style="margin-block:4px 12px">التضخم: متوسط 2025 لمؤشر أسعار المستهلك في المملكة نحو 2.1٪.</p>
+          <div class="read3">
+            <div class="r3"><span>كما في المسودة</span><span class="pc num" style="color:var(--rust)">0٪</span><span class="ef small">أثر حقيقي <b class="dn num">(2.1٪)</b> · تآكل نحو 1.18 م سنويًا</span></div>
+            <div class="r3"><span>لو كانت زيادة النقد توزيعات من الصندوق</span><span class="pc num" style="color:var(--gold)">4.7٪</span><span class="ef small">أثر حقيقي <b class="up num">+2.6٪</b> · نمو حقيقي نحو 1.47 م</span></div>
+            <div class="r3"><span>مستهدف استرشادي لمحفظة وقفية متوازنة</span><span class="pc num" style="color:var(--teal)">6–7٪</span><span class="ef small">أثر حقيقي <b class="up num">+4 إلى +5٪</b> · يحتاج اعتماد مؤشر مرجعي</span></div>
+          </div>
+          <p class="foot">المستهدف في السطر الثالث افتراض للنقاش، لا توصية بعائد محدد.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. AXES ================= -->
+<section class="sec alt" id="axes" aria-labelledby="h-axes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٦</div>
+      <div class="kicker">المحاور الستة في دليل الزمالة</div>
+      <h2 id="h-axes">قراءة المحاور من الزاوية المالية</h2>
+      <p>مدخل لخريطة الفجوات يُستكمل مع قراءة الحوكمة والمخاطر. التصنيف مبني على الوثائق المتوفرة فقط.</p>
+    </div>
+    <div class="axes">
+      <div class="card"><div class="hd"><h4>الوجهة والسياسة</h4><span class="v-chip v-bad">غائب</span></div><p class="small" style="color:var(--ink-2)">لا تظهر في الوثائق المالية سياسة استثمار أو سياسة غلة أو هدف عائد مكتوب. لم يسجل الوقف عائدًا ولا مصروفًا ولا توزيعًا في سنتين.</p></div>
+      <div class="card"><div class="hd"><h4>تركيبة الأصول</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">نحو 95٪ من أصول الوقف (56.4 م) في وعاء واحد هو صندوق منصة إحسان، و5٪ نقد، ولا عقار. وللوقف حصة 49٪ في السقيفة.</p></div>
+      <div class="card"><div class="hd"><h4>نموذج الإدارة</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">الاستثمار مُدار عبر صندوق خارجي، لكن لا تظهر شروطه ولا رسومه ولا تقارير صافي قيمة الأصول. السقيفة ذراع تشغيلية مستقلة.</p></div>
+      <div class="card"><div class="hd"><h4>الحوكمة</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">قوائم السقيفة مراجعة برأي نظيف، أما قوائم الوقف فمسودة غير مراجعة وفيها أخطاء تصنيف وتوازن. <a href="#files" data-open-tab="gov">قراءة الحوكمة واللوائح</a>.</p></div>
+      <div class="card"><div class="hd"><h4>الامتثال</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">في السقيفة: الزكاة والقيمة المضافة مقيدتان ورأي المراجع نظيف. في الوقف: لا قوائم مراجعة لسنتين.</p></div>
+      <div class="card"><div class="hd"><h4>الأداء والمخاطر</h4><span class="v-chip v-bad">غائب</span></div><p class="small" style="color:var(--ink-2)">لا عائد مسجل، ولا مؤشر مرجعي، ولا حدود مخاطر معتمدة للوقف.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. MODEL ================= -->
+<section class="sec" id="model" aria-labelledby="h-model">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٧</div>
+      <div class="kicker">النموذج المالي الأولي</div>
+      <h2 id="h-model">تحدي المليار: ما الذي يوصلنا إليه؟</h2>
+      <p>من 59.5 م يلزم نمو سنوي مركب 32.6٪، ومن 84 م يلزم 28.1٪. لا توجد محفظة وقفية رشيدة تحقق ذلك بالعائد، لذلك يقيس النموذج ما يلزم من أوقاف جديدة كل سنة عند كل مستوى عائد. جرّب الافتراضات بنفسك.</p>
+    </div>
+
+    <div class="model">
+      <div class="controls">
+        <div class="ctl">
+          <span style="font-weight:700;font-size:15px">رقم الأساس</span>
+          <div class="seg" role="group" aria-label="رقم الأساس" style="margin-top:6px;display:flex">
+            <button id="b-595" aria-pressed="true" data-base="59.5" style="flex:1">59.5 م · المسودة</button>
+            <button id="b-84" aria-pressed="false" data-base="84" style="flex:1">84 م · المعلن</button>
+          </div>
+        </div>
+        <div class="ctl">
+          <label for="in-r">العائد السنوي المُعاد استثماره <output id="o-r">7٪</output></label>
+          <input type="range" id="in-r" min="0" max="12" step="0.5" value="7">
+          <div class="hint">التضخم 2.1٪ · المستهدف الاسترشادي 6–7٪</div>
+        </div>
+        <div class="ctl">
+          <label for="in-c">أوقاف جديدة كل سنة <output id="o-c">21.2 م</output></label>
+          <input type="range" id="in-c" min="0" max="80" step="0.1" value="21.2">
+          <div class="hint">تبرعات وأوقاف تُضاف في نهاية كل سنة</div>
+        </div>
+        <div class="ctl">
+          <label for="in-a">استحواذ عقاري في بداية الأفق <output id="o-a">300 م</output></label>
+          <input type="range" id="in-a" min="0" max="500" step="10" value="300">
+          <div class="hint">أصل وقفي إضافي غير ممول بالدين</div>
+        </div>
+        <div class="ctl">
+          <span style="font-weight:700;font-size:15px">سيناريوهات التقرير</span>
+          <div class="presets" style="margin-top:8px" id="presets">
+            <button data-p="0,0">العائد وحده</button>
+            <button data-p="25,0">+ أوقاف 25 م</button>
+            <button data-p="0,300">+ استحواذ 300 م</button>
+            <button data-p="21.2,300">المسار الكامل</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="min-width:0">
+        <div class="out">
+          <div><span class="k">القيمة بعد 10 سنوات</span><span class="v num" id="m-final">—</span></div>
+          <div><span class="k">الفجوة إلى المليار</span><span class="v num" id="m-gap">—</span></div>
+          <div><span class="k">الأوقاف الجديدة اللازمة سنويًا</span><span class="v num" id="m-req">—</span></div>
+        </div>
+        <div class="card" style="padding:18px">
+          <div class="legend"><span><i class="ln" style="background:var(--teal)"></i>مسار القيمة</span><span><i class="ln" style="background:var(--rust)"></i>المستهدف 1,000 م</span><span><i class="ln" style="background:var(--muted)"></i>العائد وحده</span></div>
+          <div class="chart" id="ch-model"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:22px">
+      <div class="card">
+        <h3>القيمة بعد 10 سنوات تحت أربعة سيناريوهات</h3>
+        <p class="small muted" style="margin-block:4px 12px">مليون ريال · أساس 59.5 م وعائد 7٪ · اضغط سيناريو لتحميله في النموذج</p>
+        <div class="scen" id="scen"></div>
+      </div>
+      <div class="card">
+        <h3>العائد وحده لا يكفي</h3>
+        <p class="small muted" style="margin-block:4px 12px">مليون ريال · الأوقاف الجديدة المطلوبة سنويًا لبلوغ المليار دون استحواذ</p>
+        <div class="tbl-wrap" style="border:0">
+          <table>
+            <thead><tr><th>العائد</th><th class="n">القيمة · أساس 59.5</th><th class="n">أوقاف سنويًا</th><th class="n">القيمة · أساس 84</th><th class="n">أوقاف سنويًا</th></tr></thead>
+            <tbody>
+              <tr><td><b>5٪</b></td><td class="n">96.9</td><td class="n">71.8</td><td class="n">136.8</td><td class="n">68.6</td></tr>
+              <tr><td><b>7٪</b></td><td class="n">117.0</td><td class="n"><b>63.9</b></td><td class="n">165.2</td><td class="n">60.4</td></tr>
+              <tr><td><b>9٪</b></td><td class="n">140.8</td><td class="n">56.6</td><td class="n">198.9</td><td class="n">52.7</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card"><h4>الاستحواذ العقاري هو المحرك الحاسم</h4><p class="small" style="color:var(--ink-2);margin-top:6px">إن دخل 300 م أصلًا وقفيًا جديدًا انخفضت الأوقاف المطلوبة سنويًا من 64 م إلى 21 م عند عائد 7٪. وإن موّل بالدين فالأثر على صافي الوقف أقل كثيرًا.</p></div>
+      <div class="card"><h4>غلة السقيفة تكميلية لا محورية</h4><p class="small" style="color:var(--ink-2);margin-top:6px">نصيب الوقف من ربح 2025 نحو 0.75 م. قيمة السقيفة الأكبر أن تكون مطوّرًا ومشغّلًا للأصول المستحوذ عليها.</p></div>
+      <div class="card"><h4>شرط النموذج قبل توسيعه</h4><p class="small" style="color:var(--ink-2);margin-top:6px">رقم أساس مطابق (59.5 م أم 84 م)، وعائد فعلي للصندوق، وشروط الاستحواذ: التمويل والعائد الإيجاري المتوقع.</p></div>
+    </div>
+
+    <h3 style="font-size:20px;margin-top:36px">موقع التحدي في مصفوفة الدليل</h3>
+    <p class="small muted" style="margin-block:4px 14px">الخانة المؤطرة هي الموقع الذي يقترحه الفريق للتحدي من الزاوية المالية.</p>
+    <div class="matrix">
+      <div class="ax blank"></div><div class="ax">مستوى الكيان</div><div class="ax">مستوى القطاع</div>
+      <div class="ax side">تحول مستقبلي</div>
+      <div class="cell pick"><h4>بناء نموذج إشراف استثماري جديد</h4><p>المليار بمحركات معتمدة ومقاسة.</p><span class="badge">◆ الموقع المقترح للتحدي</span></div>
+      <div class="cell"><h4>نموذج ريادي قابل للتعميم</h4><p>نموذج «محركات المليار» قابل للنقل إلى أوقاف الجامعات.</p></div>
+      <div class="ax side">حاجة حالية</div>
+      <div class="cell"><h4>معالجة أصل قائم</h4><p>رفع عائد الـ56.4 م المستثمرة.</p></div>
+      <div class="cell"><h4>معالجة ممارسة شائعة</h4><p>قوائم وقف بلا فصل بين الأصل والغلة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. PLAN ================= -->
+<section class="sec alt" id="plan" aria-labelledby="h-plan">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٨</div>
+      <div class="kicker">الفجوات ومدخلات خطة التحسين</div>
+      <h2 id="h-plan">أكبر ثلاث فجوات مالية، وخمسة إجراءات</h2>
+      <p>مسودة إجراءات بصيغة قالب الدليل، يختار منها الفريق الفجوة الرئيسة ويحوّلها إلى خطة من ثلاث إلى خمس خطوات.</p>
+    </div>
+    <div class="gaps3">
+      <div class="gap3 pattern"><div class="n">١</div><h3>القياس قبل الاستثمار</h3><p>لا عائد مسجل على 56.4 م، وقوائم الوقف غير مراجعة وفيها أخطاء تصنيف، فلا أساس رقميًا لأي قرار.</p></div>
+      <div class="gap3 pattern"><div class="n">٢</div><h3>التركّز مقابل الطموح</h3><p>95٪ من الأصول في وعاء واحد، والمليار يحتاج نحو 33٪ نموًا سنويًا لا يأتي من العائد.</p></div>
+      <div class="gap3 pattern"><div class="n">٣</div><h3>ذراع تشغيلية بلا غلة</h3><p>السقيفة تنمو بالدين وبذمم متضخمة، ولا توزع على الوقف.</p></div>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="gp">قوائم الوقف لا تصلح أساسًا للقرار</div><p class="act">إعادة إصدار قوائم الوقف 2024–2025 مراجَعةً من مراجع خارجي: فصل الأصل الموقوف عن الغلة، وإثبات وحدات صندوق إحسان بقيمتها العادلة، وإثبات حصة الـ49٪ في السقيفة.</p><dl><div><dt>المسؤول</dt><dd>إدارة الوقف + المراجع الخارجي</dd></div><div><dt>الأفق</dt><dd><span class="when">نهاية الربع الأول 2027</span></dd></div><div><dt>دليل الإنجاز</dt><dd>قوائم مراجَعة برأي، ومطابقة رقم 84 م مع الدفاتر</dd></div></dl></div>
+      <div class="step"><div class="gp">غياب قياس العائد</div><p class="act">استلام كشوف صافي قيمة الأصول للصندوق، وحساب العائد الفعلي للسنتين، ومقارنته بالتضخم (2.1٪) وبمؤشر مرجعي تعتمده لجنة الاستثمار.</p><dl><div><dt>المسؤول</dt><dd>المحلل المالي + إدارة الوقف</dd></div><div><dt>الأفق</dt><dd><span class="when">قبل 19 ديسمبر 2026</span></dd></div><div><dt>دليل الإنجاز</dt><dd>جدول عائد سنوي موثّق بالمصدر</dd></div></dl></div>
+      <div class="step"><div class="gp">السقيفة لا تُدِرّ غلة للوقف</div><p class="act">اعتماد سياسة توزيع أرباح للسقيفة بعد الوفاء بخدمة الدين، وتحويل جزء من الأرباح المبقاة إلى رأس المال.</p><dl><div><dt>المسؤول</dt><dd>الشركاء ومجلس مديري السقيفة</dd></div><div><dt>الأفق</dt><dd><span class="when">الربع الثاني 2027</span></dd></div><div><dt>دليل الإنجاز</dt><dd>قرار الشركاء وأول توزيع مستلم في حساب الوقف</dd></div></dl></div>
+      <div class="step"><div class="gp">ذمم 8.1 م بلا مخصص</div><p class="act">تقرير أعمار ديون شهري، وتكوين مخصص هبوط، وسقف تركّز لكل عميل، ومستهدف تحصيل لا يتجاوز 60 يومًا.</p><dl><div><dt>المسؤول</dt><dd>الإدارة المالية للسقيفة</dd></div><div><dt>الأفق</dt><dd><span class="when">6 أشهر</span></dd></div><div><dt>دليل الإنجاز</dt><dd>فترة التحصيل في القوائم الربعية</dd></div></dl></div>
+      <div class="step"><div class="gp">هدف المليار بلا محركات</div><p class="act">بناء نموذج «محركات المليار» يحدد مساهمة كل محرك (أوقاف جديدة، عائد، استحواذ عقاري، غلة السقيفة) بمستهدف سنوي يعتمده مجلس النظارة.</p><dl><div><dt>المسؤول</dt><dd>فريق المشروع ← لجنة الاستثمار</dd></div><div><dt>الأفق</dt><dd><span class="when">الختام · 19 ديسمبر 2026</span></dd></div><div><dt>دليل الإنجاز</dt><dd>نموذج معتمد بمستهدفات 10 سنوات</dd></div></dl></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. FILES (TABS) ================= -->
+<section class="sec" id="files" aria-labelledby="h-files">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٩</div>
+      <div class="kicker">ملف المشروع</div>
+      <h2 id="h-files">الفريق والوثائق والحوكمة ومسيرة الوقف</h2>
+      <p>المواد المساندة التي بُني عليها التحليل، مرتبة في تبويبات.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="أقسام ملف المشروع" id="ftabs">
+      <button role="tab" id="t-team" aria-controls="p-team" aria-selected="true">فريق المشروع</button>
+      <button role="tab" id="t-docs" aria-controls="p-docs" aria-selected="false" tabindex="-1">سجل الوثائق</button>
+      <button role="tab" id="t-gov" aria-controls="p-gov" aria-selected="false" tabindex="-1">الحوكمة واللوائح</button>
+      <button role="tab" id="t-journey" aria-controls="p-journey" aria-selected="false" tabindex="-1">مسيرة الوقف</button>
+      <button role="tab" id="t-method" aria-controls="p-method" aria-selected="false" tabindex="-1">منهجية التحليل</button>
+    </div>
+
+    <!-- team -->
+    <div role="tabpanel" id="p-team" aria-labelledby="t-team">
+      <div class="team">
+        <div class="mem"><div class="top"><span class="avatar">ع</span><div><div class="nm">عمر المحيسن</div><div class="rl">المنسق</div></div></div><p>قيادة الفريق وإدارة الاجتماعات، وضبط النطاق والجدول الزمني، ومتابعة التكليفات، والتواصل مع قيادة الوقف لطلب البيانات والمقابلات، والتأكد من تطبيق المعايير الستة في الدليل على سير العمل.</p><span class="due">التسليم: مستمر</span></div>
+        <div class="mem"><div class="top"><span class="avatar">ح</span><div><div class="nm">حامد بن حنيف الذيابي</div><div class="rl">المحلل المالي والاستثماري</div></div></div><p>تحليل القوائم المالية وإيرادات السقيفة، وفحص أداء الصندوق الوقفي، وتقييم عوائد الأصول، وقياس مؤشرات العائد والمخاطر والسيولة، وبناء النموذج المالي الأولي.</p><a class="lk" href="#summary">← مخرجه: التحليل المالي والاستثماري</a><span class="due">التسليم: 21 جمادى الأولى 1448هـ (1 نوفمبر)</span></div>
+        <div class="mem"><div class="top"><span class="avatar">ث</span><div><div class="nm">ثابت العتيبي</div><div class="rl">الموثّق</div></div></div><p>جمع الوثائق وتصنيفها (الصك، شهادة الوقف، اللوائح، عقود السقيفة، بيانات الصندوق)، وإعداد سجل مرجعي لكل رقم ومستند، ورصد الفجوات الناقصة، وضمان قابلية المراجعة والتدقيق.</p><a class="lk" href="#files" data-open-tab="docs">← مخرجه: سجل الوثائق</a><span class="due">التسليم: 21 جمادى الأولى 1448هـ (1 نوفمبر)</span></div>
+        <div class="mem"><div class="top"><span class="avatar">ب</span><div><div class="nm">باسل الفوزان</div><div class="rl">المتحدث الرسمي</div></div></div><p>بناء العرض النهائي وفق معايير التقييم الستة، وتصميم الرسوم والإنفوجرافيك، وصياغة الرسائل الرئيسة بالأرقام، وإعداد السرد القصصي، ومحاكاة عرض تجريبي قبل التسليم.</p><span class="due">التسليم: 24 جمادى الأولى 1448هـ (4 نوفمبر)</span></div>
+        <div class="mem"><div class="top"><span class="avatar">ص</span><div><div class="nm">صالح السلطان</div><div class="rl">محلل الحوكمة والمخاطر</div></div></div><p>فحص اللوائح ومدى اكتمالها وتطبيقها، ورسم خريطة الحوكمة بين الوقف والجامعة والسقيفة والصندوق، وتحديد مسار القرار الاستثماري، وتقييم جاهزية الحوكمة للاستحواذ العقاري (300 م).</p><a class="lk" href="#files" data-open-tab="gov">← مخرجه: قراءة الحوكمة واللوائح</a><span class="due">التسليم: 21 جمادى الأولى 1448هـ (1 نوفمبر)</span></div>
+        <div class="mem"><div class="top"><span class="avatar">إ</span><div><div class="nm">إبراهيم الخميس</div><div class="rl">محلل الأصول والبيانات الميدانية</div></div></div><p>الخطوات العملية والتنفيذية، وتطوير الملف، ومتابعة ما بعد المعسكر.</p><span class="due">التسليم: 24 جمادى الأولى 1448هـ (4 نوفمبر)</span></div>
+      </div>
+      <div class="card" style="margin-top:16px;display:flex;gap:14px;align-items:flex-start;background:transparent">
+        <span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+        <div><h4>القائد الاستثنائي المقترح</h4><p class="small" style="color:var(--ink-2)">اقترح الفريق في اجتماعه الأول د. يحيى بن إبراهيم اليحيى لخبرته الكبيرة في القطاع غير الربحي وقربه من القطاع الاستثماري، والشيخ محمد الحبيب رجلًا ثانيًا.</p></div>
+      </div>
+    </div>
+
+    <!-- docs -->
+    <div role="tabpanel" id="p-docs" aria-labelledby="t-docs" hidden>
+      <div class="filters" id="doc-filter" role="group" aria-label="تصفية الوثائق"></div>
+      <div class="tbl-wrap">
+        <table id="doc-table">
+          <thead><tr><th>الرمز</th><th>الوثيقة</th><th>التصنيف</th><th>التاريخ</th><th>الجهة</th><th>الصفة المرجعية</th><th>إجراء الاستكمال</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <h3 style="font-size:19px;margin-block:26px 12px">المستندات الناقصة · ثماني فجوات</h3>
+      <div class="miss-list">
+        <div><span class="code">G-01</span>وثيقة الوقف السابقة</div>
+        <div><span class="code">G-02</span>اللوائح الثماني كاملة</div>
+        <div><span class="code">G-03</span>قرارات اعتماد اللوائح</div>
+        <div><span class="code">G-04</span>عقد تأسيس شركة السقيفة وتعديلاته</div>
+        <div><span class="code">G-05</span>العقود التشغيلية والاستثمارية للسقيفة</div>
+        <div><span class="code">G-06</span>وثائق الصندوق الوقفي</div>
+        <div><span class="code">G-07</span>البيانات المالية المستقلة للصندوق</div>
+        <div><span class="code">G-08</span>مستندات العلاقة بين الوقف والسقيفة</div>
+      </div>
+      <p class="foot">يرتبط سدّ الفجوتين G-06 وG-07 مباشرة بمطابقة <a href="#gap84">فجوة الـ84 مليونًا</a> وبحساب العائد الفعلي للصندوق. ويضيف الفريق إلى السجل مسودتي قوائم الوقف لعامي 2024 و2025 بوصفهما مرجعين ماليين.</p>
+    </div>
+
+    <!-- governance -->
+    <div role="tabpanel" id="p-gov" aria-labelledby="t-gov" hidden>
+      <div class="grid g2" style="align-items:start">
+        <div>
+          <h3 style="font-size:19px;margin-bottom:12px">الكيانات والعلاقة بينها</h3>
+          <ul class="status-list">
+            <li><span class="dot ok"></span><div><b>الجامعة الإسلامية:</b> المؤسسة التعليمية بالمدينة المنورة، تملك وتشرف على الوقف وشركة السقيفة وفق اللوائح والسياسات المنظمة لتلك العلاقة.</div></li>
+            <li><span class="dot ok"></span><div><b>الأمانة العامة للأوقاف (أوقاف الجامعة الإسلامية):</b> الكيان المسؤول عن إدارة الأصول والموارد الوقفية للجامعة وتنميتها من رجال الأعمال والمانحين، بترخيص من الهيئة العامة للأوقاف.</div></li>
+            <li><span class="dot ok"></span><div><b>صندوق وقف الجامعة الإسلامية بالمدينة المنورة:</b> يديره الأهلي كابيتال، ومرخّص من الهيئة العامة للأوقاف وهيئة السوق المالية.</div></li>
+            <li><span class="dot ok"></span><div><b>شركة السقيفة لتطوير الأعمال:</b> الذراع الاستثمارية والتجارية، مملوكة للجامعة 51٪ ولأوقاف الجامعة 49٪. تدير المشاريع الاستثمارية والحلول التقنية والتعليمية والتشغيلية والفعاليات والبرامج التدريبية.</div></li>
+          </ul>
+          <p class="foot">لكل كيان هيكله التنظيمي والإداري الخاص.</p>
+        </div>
+        <div>
+          <h3 style="font-size:19px;margin-bottom:12px">الوضع الحالي حسب دليل الزمالة</h3>
+          <ul class="status-list">
+            <li><span class="dot ok"></span><div>تصريح رسمي ساري بإشراف الهيئة العامة للأوقاف.</div></li>
+            <li><span class="dot ok"></span><div>مجلس نظارة معتمد.</div></li>
+            <li><span class="dot ok"></span><div>حزمة تشريعات تضمن الجودة في استقبال التبرعات وإدارتها والحوافز: القواعد التنظيمية على اللائحة المنظمة لإدارة الأوقاف في الجامعات، ولائحة تنمية الموارد المالية، واللائحة الداخلية للتنظيم المالي والمحاسبي، ومصفوفة الصلاحيات الرئيسة، ولائحة التسويق.</div></li>
+            <li><span class="dot bd"></span><div>غياب تنظيمات تحد من استغلال الوقف، منها قواعد مكافحة غسل الأموال.</div></li>
+            <li><span class="dot wn"></span><div>تعارض المصالح والإفصاح واردان تعريفًا ومادةً في ثلاثة تنظيمات، ويحتاجان بسطًا أكثر.</div></li>
+            <li><span class="dot wn"></span><div>مصفوفة الصلاحيات مميزة، وتحتاج مواءمة مصطلحاتها مع لوائح الوقف.</div></li>
+            <li><span class="dot wn"></span><div>تشابه في المصطلحات واختلاف في صيغها، مثل: لجنة المراجعة، والمراجع الخارجي، والمراجعة الداخلية، ومراجع الحسابات الخارجي.</div></li>
+            <li><span class="dot wn"></span><div>لائحة تنمية الموارد، المادة 3 البند 5: خطأ إملائي يحتاج تصحيحًا.</div></li>
+          </ul>
+          <p class="foot">توفرت للفريق خمس وثائق تنظيمية من أصل ثماني لوائح مذكورة في نطاق العمل، والبقية مرصودة ضمن <a href="#files" data-open-tab="docs">المستندات الناقصة</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- journey -->
+    <div role="tabpanel" id="p-journey" aria-labelledby="t-journey" hidden>
+      <div class="grid g2" style="margin-bottom:18px">
+        <div class="card"><div class="kicker">الرؤية</div><p style="font-weight:700;font-size:18px">بنية تنموية مستدامة لتنمية أوقاف الجامعة.</p></div>
+        <div class="card"><div class="kicker">الرسالة</div><p class="small" style="color:var(--ink-2)">بناء بيئة جاذبة للأصول الوقفية في الجامعة الإسلامية بالمدينة المنورة، والعمل على تنمية تلك الأوقاف وتعظيم أثرها بشراكات فاعلة مع المجتمع المحلي والدولي، لتحقيق استدامة مالية وعوائد وقفية تسهم في تمويل ميزانية الجامعة.</p></div>
+      </div>
+      <div class="tl">
+        <div class="yr"><div class="y">1444هـ</div><div class="a">التأسيس</div><ul><li>إصدار الصك الوقفي من وزارة العدل</li><li>إصدار الشهادة الوقفية من الهيئة العامة للأوقاف</li><li>فتح الحسابات البنكية</li><li>دراسة تأسيس الصندوق الوقفي</li><li>تأسيس شركة السقيفة، ثم نقل 51٪ لملكية الجامعة</li><li>اعتماد لائحة تنظيم أوقاف الجامعة</li></ul><div class="amt">أصول الصندوق<b class="num">200,000</b></div></div>
+        <div class="yr"><div class="y">1445هـ</div><div class="a">التنظيم</div><ul><li>إعداد التوجه الاستراتيجي</li><li>تشكيل اللجنة التنفيذية</li><li>تشكيل لجنة البرامج العلمية للمؤتمرات والملتقيات الوقفية</li><li>تحديث بيانات المفوضين بالحسابات البنكية</li><li>شراكة مؤسسة الأمير متعب</li><li>شراكة التحول الرقمي</li></ul><div class="amt">أصول الصندوق<b class="num">50,200,167</b></div></div>
+        <div class="yr"><div class="y">1446هـ</div><div class="a">الانطلاق</div><ul><li>إطلاق الصندوق الوقفي</li><li>إعادة تشكيل مجلس مديري شركة السقيفة</li><li>توقيع عدد من الشراكات</li><li>تعزيز الصندوق الاستثماري</li><li>التوسع في الأنشطة الاستثمارية</li></ul><div class="amt">أصول الصندوق<b class="num">84,483,298</b></div></div>
+        <div class="yr"><div class="y">1447هـ</div><div class="a">التعزيز</div><ul><li>تعزيز أصول شركة السقيفة</li><li>إطلاق التحول الرقمي</li><li>حلقة نقاشية حول المزارع الوقفية</li><li>إعادة تشكيل مجلس النظارة</li><li>العمل على الحوكمة</li></ul><div class="amt">المستهدف<b class="num">90 مليون</b></div></div>
+      </div>
+
+      <h3 style="font-size:19px;margin-block:26px 12px">أهداف الوقف حتى نهاية 1447هـ</h3>
+      <div class="targets">
+        <div><b class="num">90 م</b><span>أصول وقفية للجامعة</span></div>
+        <div><b class="num">+180 م</b><span>أصول وقفية عقارية</span></div>
+        <div><b class="num">5</b><span>شراكات مثمرة</span></div>
+        <div><b class="num">10</b><span>برامج تدريبية</span></div>
+        <div><b class="num">1</b><span>ملتقى المانحين</span></div>
+      </div>
+
+      <h3 style="font-size:19px;margin-block:26px 12px">المنتجات والمبادرات الوقفية</h3>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+        <div class="card"><h4>الصندوق الاستثماري الوقفي</h4><p class="small" style="color:var(--ink-2);margin-top:6px">صندوق عام مفتوح تديره جهة مالية متخصصة. تجاوز مستهدفه البالغ 50 م ليحقق أصولًا تقدر بـ84 م.</p></div>
+        <div class="card"><h4>شراكة مؤسسة متعب بن عبدالعزيز الأهلية</h4><p class="small" style="color:var(--ink-2);margin-top:6px">دعم بـ1.15 م للتسويق لأوقاف الجامعة عبر شركة متخصصة، بهدف استقطاب دعم بقيمة 50 م.</p></div>
+        <div class="card"><h4>التحول التقني</h4><p class="small" style="color:var(--ink-2);margin-top:6px">مبادرة من شركة التحول التقني برعاية stc لتوفير أنظمة مجانية: مالي، ومشاريع، وموارد بشرية، وحوكمة، ومجلس نظارة، وعضويات، وغيرها.</p></div>
+        <div class="card"><h4>التقويم الوقفي</h4><p class="small" style="color:var(--ink-2);margin-top:6px">نشر يومي منذ 1 يونيو 2023 لإضاءات وقفية، بلغت مشاهداته نحو <b class="num">3.75 مليون</b> عبر منصات التواصل.</p></div>
+      </div>
+      <p class="src">تقرير أوقاف الجامعة الإسلامية (العرض التقديمي المساند، الوثيقة WQ-013).</p>
+    </div>
+
+    <!-- method -->
+    <div role="tabpanel" id="p-method" aria-labelledby="t-method" hidden>
+      <div class="grid g2" style="align-items:start">
+        <div class="card">
+          <h3>مصادر التحليل</h3>
+          <ul class="small" style="color:var(--ink-2);padding-inline-start:20px;margin:10px 0 0;display:grid;gap:6px">
+            <li>قوائم شركة السقيفة المراجعة لثلاث فترات: 2022–2023 (15 شهرًا)، و2024، و2025.</li>
+            <li>مسودتا القوائم المالية لوقف الجامعة الإسلامية لعامي 2024 و2025.</li>
+            <li>محضر الاجتماع الأول لمشروع التخرج (الأدوار والتحدي والأرقام المرجعية).</li>
+            <li>تقرير أوقاف الجامعة الإسلامية (أصول الصندوق والمسيرة والمستهدفات).</li>
+            <li>متوسط التضخم لعام 2025 من الهيئة العامة للإحصاء عبر البنك الدولي.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>معادلة نموذج المليار</h3>
+          <p class="small" style="color:var(--ink-2);margin-top:8px">القيمة في نهاية كل سنة = قيمة السنة السابقة × (1 + العائد) + الأوقاف الجديدة للسنة. يُضاف الاستحواذ العقاري إلى الأساس في بداية الأفق، ويُعاد استثمار العائد بالكامل، ولا يُخصم توزيع للغلة ولا مصروفات نظارة.</p>
+          <p class="small" style="color:var(--ink-2);margin-top:8px">الأوقاف اللازمة سنويًا = (1,000 − الأساس × (1+ع)<sup>10</sup>) ÷ معامل القيمة المستقبلية للدفعات ((1+ع)<sup>10</sup> − 1) ÷ ع.</p>
+        </div>
+        <div class="card">
+          <h3>تعريف المؤشرات</h3>
+          <ul class="small" style="color:var(--ink-2);padding-inline-start:20px;margin:10px 0 0;display:grid;gap:6px">
+            <li>هامش EBITDA: (صافي الربح قبل الزكاة + الإهلاك والإطفاء) ÷ الإيرادات.</li>
+            <li>العائد على الأصول وحقوق الشركاء: صافي الربح بعد الزكاة ÷ متوسط الرصيد.</li>
+            <li>فترة التحصيل: المدينون التجاريون ÷ الإيرادات × 365.</li>
+            <li>نسبة النقدية: النقد ÷ الالتزامات المتداولة.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>حدود التحليل</h3>
+          <p class="small" style="color:var(--ink-2);margin-top:8px">التصنيف والأحكام مبنية على الوثائق المتوفرة فقط. أرقام الوقف مؤشرات أولية إلى أن تصدر قوائم مراجَعة، ويُعاد بناء النموذج بعد مطابقة رقم الأساس واستلام كشوف صافي قيمة الأصول.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= NOTES FOOTER ================= -->
+<footer class="notes pattern" id="notes" aria-labelledby="h-notes">
+  <div class="wrap">
+    <div class="eyebrow" style="color:#D9B36C">ملاحظات الفريق على الأرقام</div>
+    <h2 id="h-notes" style="margin-top:6px">ما يجب معرفته قبل الاستشهاد بأي رقم</h2>
+    <p class="intro">راجع الفريق كل رقم في هذا العرض مقابل مصدره. هذه ملاحظاتنا على مصادر الأرقام وحدودها، وما نعمل على مطابقته قبل اعتماد النموذج.</p>
+    <ol class="nlist">
+      <li><div><b>الفترة الأولى للسقيفة 15 شهرًا</b> (27 سبتمبر 2022 – 31 ديسمبر 2023)، فلا تُقارن نسب نموها مباشرة بما بعدها.</div></li>
+      <li><div><b>قوائم الوقف مسودات غير مراجعة</b>، ونستخدمها مؤشرًا لا مرجعًا نهائيًا. أما قوائم السقيفة فمراجعة برأي نظيف من السديس محاسبون قانونيون.</div></li>
+      <li><div><b>رقمان لأصول الوقف:</b> 59.5 م في المسودة و84.5 م في تقرير الأوقاف ومحضر الاجتماع. الفرق 24.5 م (41٪). نعتمد 59.5 م أساسًا للنموذج لأنه الرقم الدفتري، ونعرض 84 م بديلًا إلى أن تتم المطابقة. <a href="#gap84">التفاصيل</a>.</div></li>
+      <li><div><b>عائد الصندوق المسجل صفر.</b> رقم 4.7٪ (نحو 2.6 م) تقدير من الفريق مبني على زيادة النقد في 2025، ولا يصبح رقمًا معتمدًا إلا بكشوف صافي قيمة الأصول.</div></li>
+      <li><div><b>تسمية الصندوق:</b> تقيّد القوائم الاستثمار في «صندوق منصة إحسان»، بينما يعرّف ملف الكيانات «صندوق وقف الجامعة الإسلامية» الذي يديره الأهلي كابيتال. نعمل على توحيد التسمية والتحقق من أنهما الوعاء نفسه.</div></li>
+      <li><div><b>الهامش المعدّل 18.7٪</b> افتراض تحليلي يعيد تحميل إهلاك المعدات (1.32 م) على تكلفة الإيراد، ولا يغيّر صافي الربح.</div></li>
+      <li><div><b>إضافات الأصول الثابتة 4.98 م</b> وفق قائمة التدفقات النقدية، ومنها معدات بنحو 4.4 م.</div></li>
+      <li><div><b>حصة الوقف في السقيفة:</b> 1.02 م دفتريًا = 49٪ × حقوق الشركاء 2.08 م. ونصيب ربح 2025 نحو 0.75 م = 49٪ × صافي الربح بعد الزكاة 1.52 م.</div></li>
+      <li><div><b>هامش صافي الربح</b> في الرسوم محسوب قبل الزكاة، والعائد على الأصول وحقوق الشركاء محسوب بعدها على متوسط الرصيد.</div></li>
+      <li><div><b>التضخم 2.1٪</b> هو متوسط 2025 لمؤشر أسعار المستهلك في المملكة (الهيئة العامة للإحصاء عبر البنك الدولي). ونطاق 6–7٪ للمحفظة الوقفية افتراض للنقاش لا توصية بعائد محدد.</div></li>
+      <li><div><b>افتراضات نموذج المليار:</b> عائد يُعاد استثماره بالكامل، وأوقاف جديدة تُضاف نهاية كل سنة، واستحواذ 300 م يدخل أصلًا وقفيًا في بداية الأفق دون تمويل بالدين، ولا توزيع للغلة ولا مصروفات.</div></li>
+      <li><div><b>مستهدف الأصول العقارية:</b> يذكر تقرير الأوقاف أكثر من 180 م حتى نهاية 1447هـ، بينما يناقش المشروع استحواذًا بـ300 م. سنوحّد الرقم مع إدارة الوقف قبل التسليم الختامي.</div></li>
+      <li><div><b>الرموز:</b> الأرقام بالريال السعودي، و«م» تعني مليون ريال، والأرقام بين قوسين سالبة.</div></li>
+    </ol>
+
+    <div class="colophon">
+      <div>
+        <h4>تحدي المليار الوقفي</h4>
+        <p>مشروع التخرج في برنامج الزمالة السعودية في الاستثمار وتنمية الأصول لدى الجمعيات الأهلية. الكيان: وقف الجامعة الإسلامية بالمدينة المنورة. يُعرض في المخيم القيادي 5–7 نوفمبر 2026، والختام 19 ديسمبر 2026.</p>
+      </div>
+      <div>
+        <h4>فريق المشروع</h4>
+        <ul><li>عمر المحيسن · المنسق</li><li>حامد الذيابي · المحلل المالي والاستثماري</li><li>ثابت العتيبي · الموثّق</li><li>باسل الفوزان · المتحدث الرسمي</li><li>صالح السلطان · محلل الحوكمة والمخاطر</li><li>إبراهيم الخميس · محلل الأصول والبيانات</li></ul>
+      </div>
+      <div>
+        <h4>مخرجات المشروع</h4>
+        <ul><li>التحليل المالي والاستثماري (1 نوفمبر 2026)</li><li>سجل الوثائق والمستندات الناقصة</li><li>قراءة الحوكمة واللوائح</li><li>محضر الاجتماع الأول</li></ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="totop" href="#top" aria-label="العودة إلى الأعلى">↑</a>
+
+<script>
+(function(){
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const NS="http://www.w3.org/2000/svg";
+const fmt=(v,d=1)=>{const a=Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});return v<0?'('+a+')':a};
+function el(tag,attrs,parent,text){const e=document.createElementNS(NS,tag);let st='';for(const k in attrs){const v=String(attrs[k]);if((k==='fill'||k==='stroke')&&v.includes('(')){st+=k+':'+v+';'}else if(k==='style'){st+=v}else e.setAttribute(k,v)}if(st)e.setAttribute('style',st);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e}
+function svgFor(host,h){host.innerHTML="";const w=Math.max(280,host.clientWidth||600);const s=el('svg',{viewBox:`0 0 ${w} ${h}`,width:w,height:h,role:'img'},host);return {s,w,h}}
+function tipFor(host){let t=host.querySelector('.tip');if(!t){t=document.createElement('div');t.className='tip';host.appendChild(t)}return t}
+function bindTip(host,node,text,x,y){const t=tipFor(host);node.addEventListener('mouseenter',()=>{t.textContent=text;t.style.left=x+'px';t.style.top=y+'px';t.style.transform='translate(-50%,-110%)';t.style.opacity=1});node.addEventListener('mouseleave',()=>{t.style.opacity=0})}
+
+/* ---------- entity map ---------- */
+const NODES={
+ uni:{t:"الجامعة الإسلامية",li:["الجهة المشرفة على الوقف وشركة السقيفة وفق اللوائح المنظمة.","تملك 51٪ من السقيفة بحصة 51,000 ريال (5,100 حصة).","لكل كيان هيكله التنظيمي والإداري الخاص."],go:"#files",gl:"الحوكمة واللوائح",tab:"gov"},
+ waqf:{t:"وقف الجامعة الإسلامية بالمدينة المنورة",li:["أصول دفترية 59.5 م في 31 ديسمبر 2025: 56.4 م في صندوق منصة إحسان و3.08 م نقد.","أداء الصندوق المعلن 84 م، والفرق عن الدفاتر 24.5 م يحتاج مطابقة.","يملك 49٪ من السقيفة، ولا تظهر الحصة في قوائمه."],go:"#fund",gl:"الصندوق الوقفي"},
+ saq:{t:"شركة السقيفة لتطوير الأعمال",li:["إيرادات 25.9 م في 2025 بنمو 169٪، وصافي ربح بعد الزكاة 1.52 م.","رأس مال 100 ألف ريال وقروض 10 م، وذمم مدينة 8.1 م.","حصة الوقف 49٪ تعادل نحو 1.02 م دفتريًا، والأرباح مبقاة في الشركة."],go:"#saqifa",gl:"تحليل السقيفة"},
+ fund:{t:"صندوق منصة إحسان",li:["56.4 م ثابتة في مسودتي 2024 و2025، أي مقيدة بالتكلفة لا بصافي قيمة الأصول.","لا عائد مسجل ولا رسوم ولا تقارير أداء ظاهرة في الوثائق.","تمثل 95٪ من أصول الوقف: تركّز في وعاء واحد."],go:"#fund",gl:"ملاحظات قوائم الوقف"},
+ cash:{t:"نقد الوقف",li:["ارتفع من 447 ألفًا إلى 3.08 م في 2025 (+2.63 م).","الزيادة تعادل 4.7٪ من قيمة الصندوق، وقد تكون توزيعات منه قُيّدت ريعًا للتبرعات.","مُسجّل في المسودة رأسَ مال الوقف الأصلي، والصحيح غالبًا عكس ذلك."],go:"#fund",gl:"العائد مقابل التضخم"}
+};
+const map=$('#map'),wires=$('#wires'),detail=$('#detail');
+function showNode(id){
+  $$('.node',map).forEach(n=>n.setAttribute('aria-pressed',n.dataset.id===id?'true':'false'));
+  const d=NODES[id];
+  detail.innerHTML=`<div><div class="kicker">تفاصيل الوحدة</div><h3>${d.t}</h3><ul>${d.li.map(x=>`<li>${x}</li>`).join('')}</ul></div><a class="btn" href="${d.go}"${d.tab?` data-open-tab="${d.tab}"`:''}>${d.gl} ←</a>`;
+}
+$$('.node',map).forEach(n=>n.addEventListener('click',()=>showNode(n.dataset.id)));
+showNode('waqf');
+function drawWires(){
+  wires.innerHTML="";
+  if(getComputedStyle(wires).display==='none')return;
+  const r0=map.getBoundingClientRect();
+  const box=id=>{const b=$(`.node[data-id="${id}"]`,map).getBoundingClientRect();return {x:b.left-r0.left,y:b.top-r0.top,w:b.width,h:b.height}};
+  const edges=[["uni","saq","own","51٪ · 51,000 ريال"],["waqf","saq","miss","49٪ · 49,000 ريال · غير مقيدة"],["waqf","fund","own",""],["waqf","cash","own",""]];
+  edges.forEach(([a,b,cls,label],i)=>{
+    const A=box(a),B=box(b);
+    let x1=A.x+A.w/2,y1=A.y+A.h,x2=B.x+B.w/2,y2=B.y;
+    if(a==='waqf'&&b==='saq'){x1=A.x+A.w*0.18}
+    if(a==='uni'){x1=A.x+A.w*0.5}
+    if(a==='waqf'&&b==='fund'){x1=A.x+A.w*0.62}
+    if(a==='waqf'&&b==='cash'){x1=A.x+A.w*0.9}
+    const my=(y1+y2)/2;
+    el('path',{d:`M${x1},${y1} C${x1},${my} ${x2},${my} ${x2},${y2}`,class:cls},wires);
+    if(!label)return;
+    const lx=(x1+x2)/2,ly=my+(cls==='miss'?-2:0);
+    const t=el('text',{x:lx,y:ly+4,'text-anchor':'middle',class:cls==='miss'?'miss':''},wires,label);
+    try{const bb=t.getBBox();const r=el('rect',{x:bb.x-6,y:bb.y-2,width:bb.width+12,height:bb.height+4,rx:6},null);wires.insertBefore(r,t)}catch(e){}
+  });
+}
+
+/* ---------- charts ---------- */
+const P=["2022–2023*","2024","2025"];
+const S={rev:[3.924,9.631,25.913],gp:[1.868,4.136,6.165],np:[-0.945,1.421,1.577]};
+function barsChart(){
+  const host=$('#ch-bars');const {s,w,h}=svgFor(host,280);
+  const L=34,R=12,T=16,B=34,iw=w-L-R,ih=h-T-B,min=-2,max=28,y=v=>T+ih*(max-v)/(max-min);
+  [0,7,14,21,28].forEach(v=>{el('line',{x1:L,x2:w-R,y1:y(v),y2:y(v),class:v===0?'zero':'grid-l'},s);el('text',{x:L-6,y:y(v)+4,'text-anchor':'end'},s,v)});
+  const gw=iw/3,bw=Math.min(28,gw/4.2);
+  P.forEach((p,i)=>{
+    const gi=2-i; /* RTL: earliest on the right */
+    const cx=L+gw*gi+gw/2;
+    [['rev','c-rev'],['gp','c-gp'],['np','c-np']].forEach(([k,c],j)=>{
+      const v=S[k][i],x=cx+(j-1)*(bw+4)-bw/2,y0=y(Math.max(v,0)),hh=Math.abs(y(v)-y(0));
+      const r=el('rect',{x,y:y0,width:bw,height:Math.max(hh,1),rx:3,class:v<0?'c-neg':c},s);
+      if(k==='rev')el('text',{x:x+bw/2,y:y0-5,'text-anchor':'middle',class:'lbl-v'},s,fmt(v,1));
+      bindTip(host,r,({rev:'الإيرادات',gp:'مجمل الربح',np:'صافي الربح'}[k])+' '+p+': '+fmt(v,2)+' م',x+bw/2,y0);
+    });
+    el('text',{x:cx,y:h-10,'text-anchor':'middle'},s,p);
+  });
+}
+function marginsChart(){
+  const host=$('#ch-margins');const {s,w,h}=svgFor(host,280);
+  const gm=[47.6,42.9,23.8],nm=[-24.1,14.8,6.1];
+  const L=48,R=48,T=18,B=34,iw=w-L-R,ih=h-T-B,min=-30,max=60,y=v=>T+ih*(max-v)/(max-min);
+  const x=i=>L+iw*(2-i)/2;
+  [-30,0,30,60].forEach(v=>{el('line',{x1:L,x2:w-R,y1:y(v),y2:y(v),class:v===0?'zero':'grid-l'},s);el('text',{x:L-6,y:y(v)+4,'text-anchor':'end'},s,v+'٪')});
+  [[gm,'s-gp','var(--sky)'],[nm,'s-np','var(--gold)']].forEach(([arr,c,col])=>{
+    el('path',{d:arr.map((v,i)=>(i?'L':'M')+x(i)+','+y(v)).join(' '),fill:'none',class:c,'stroke-width':2.5},s);
+    arr.forEach((v,i)=>{el('circle',{cx:x(i),cy:y(v),r:4.5,fill:col},s);el('text',{x:x(i),y:y(v)-10,'text-anchor':'middle',class:'lbl-v'},s,(v<0?'('+Math.abs(v)+')':v)+'٪')});
+  });
+  P.forEach((p,i)=>el('text',{x:x(i),y:h-10,'text-anchor':'middle'},s,p));
+}
+function bridgeChart(){
+  const host=$('#ch-bridge');const {s,w,h}=svgFor(host,300);
+  const steps=[["صافي الربح قبل الزكاة",1.577,'p'],["إهلاك وإطفاء ومخصصات",1.507,'p'],["زيادة الذمم المدينة",-7.340,'n'],["بنود رأس المال العامل الأخرى",0.520,'p'],["التدفق التشغيلي",null,'t'],["شراء ممتلكات ومعدات",-4.983,'n'],["تمويل: قرض جديد",7.100,'p'],["صافي التغير في النقد",null,'t']];
+  const L=36,R=10,T=20,B=w<560?74:56,iw=w-L-R,ih=h-T-B,min=-9.5,max=4,y=v=>T+ih*(max-v)/(max-min);
+  [-8,-4,0,4].forEach(v=>{el('line',{x1:L,x2:w-R,y1:y(v),y2:y(v),class:v===0?'zero':'grid-l'},s);el('text',{x:L-6,y:y(v)+4,'text-anchor':'end'},s,v)});
+  const n=steps.length,gw=iw/n,bw=Math.min(46,gw*0.62);let cum=0;
+  steps.forEach(([lab,v,k],i)=>{
+    const cx=L+gw*(n-1-i)+gw/2,x=cx-bw/2;let a,b,val;
+    if(k==='t'){a=0;b=cum;val=cum}else{a=cum;b=cum+v;val=v;cum=b}
+    const top=y(Math.max(a,b)),hh=Math.max(1,Math.abs(y(a)-y(b)));
+    const fill=k==='t'?(val<0?'var(--rust)':'var(--teal)'):(v<0?'color-mix(in srgb,var(--rust) 55%,transparent)':'color-mix(in srgb,var(--teal) 55%,transparent)');
+    const r=el('rect',{x,y:top,width:bw,height:hh,rx:3,fill},s);
+    const ly=val<0?top+hh+14:top-6;
+    el('text',{x:cx,y:ly,'text-anchor':'middle',class:'lbl-v'},s,(val>0&&k!=='t'?'+':'')+fmt(val,2));
+    bindTip(host,r,lab+': '+fmt(val,2)+' م',cx,top);
+    if(i<n-1&&k!=='t'){const nx=L+gw*(n-2-i)+gw/2-bw/2;el('line',{x1:x,x2:nx+bw,y1:y(cum),y2:y(cum),stroke:'var(--muted)','stroke-dasharray':'3 3'},s)}
+    const words=lab.split(' ');const lines=[];let cur='';const maxc=w<560?9:16;
+    words.forEach(wd=>{if((cur+' '+wd).trim().length>maxc&&cur){lines.push(cur);cur=wd}else cur=(cur+' '+wd).trim()});lines.push(cur);
+    lines.slice(0,3).forEach((ln,j)=>el('text',{x:cx,y:h-B+18+j*14,'text-anchor':'middle',style:k==='t'?'font-weight:700;fill:var(--ink)':'' ,'font-size':w<560?10.5:12},s,ln));
+  });
+}
+function fundChart(){
+  const host=$('#ch-fund');const {s,w,h}=svgFor(host,170);
+  const d=[["1444هـ",0.2],["1445هـ",50.2],["1446هـ",84.5]];
+  const L=8,R=8,T=22,B=26,iw=w-L-R,ih=h-T-B,max=95,y=v=>T+ih*(max-v)/max;
+  el('line',{x1:L,x2:w-R,y1:y(59.5),y2:y(59.5),stroke:'var(--teal)','stroke-dasharray':'5 4'},s);
+  el('text',{x:w-R-2,y:y(59.5)-6,'text-anchor':'end',style:'fill:var(--teal);font-weight:700'},s,'59.5 م في الدفاتر');
+  const gw=iw/3,bw=Math.min(54,gw*.5);
+  d.forEach(([lab,v],i)=>{const cx=L+gw*(2-i)+gw/2;el('rect',{x:cx-bw/2,y:y(v),width:bw,height:Math.max(2,y(0)-y(v)),rx:4,fill:'var(--gold)'},s);el('text',{x:cx,y:y(v)-6,'text-anchor':'middle',class:'lbl-v'},s,v<1?'0.2':fmt(v,1));el('text',{x:cx,y:h-8,'text-anchor':'middle'},s,lab)});
+}
+
+/* ---------- model ---------- */
+const st={base:59.5,r:7,c:21.2,a:300};
+function traj(base,r,c,a){const out=[base+a];for(let t=1;t<=10;t++)out.push(out[t-1]*(1+r/100)+c);return out}
+function req(base,r,a){const g=Math.pow(1+r/100,10);const fv=r===0?10:(g-1)/(r/100);return (1000-(base+a)*g)/fv}
+function modelChart(){
+  const host=$('#ch-model');const {s,w,h}=svgFor(host,300);
+  const tr=traj(st.base,st.r,st.c,st.a),ro=traj(st.base,st.r,0,0);
+  const L=46,R=14,T=16,B=30,iw=w-L-R,ih=h-T-B;
+  const max=Math.max(1100,Math.ceil(Math.max(...tr)/250)*250),y=v=>T+ih*(max-v)/max,x=t=>L+iw*(10-t)/10;
+  for(let v=0;v<=max;v+=250){el('line',{x1:L,x2:w-R,y1:y(v),y2:y(v),class:v===0?'zero':'grid-l'},s);el('text',{x:L-6,y:y(v)+4,'text-anchor':'end'},s,v.toLocaleString('en-US'))}
+  for(let t=0;t<=10;t+=2)el('text',{x:x(t),y:h-10,'text-anchor':'middle'},s,t===0?'الآن':'سنة '+t);
+  el('line',{x1:L,x2:w-R,y1:y(1000),y2:y(1000),stroke:'var(--rust)','stroke-width':2,'stroke-dasharray':'6 5'},s);
+  el('path',{d:ro.map((v,t)=>(t?'L':'M')+x(t)+','+y(v)).join(' '),fill:'none',stroke:'var(--muted)','stroke-width':1.8,'stroke-dasharray':'2 4'},s);
+  el('path',{d:tr.map((v,t)=>(t?'L':'M')+x(t)+','+y(v)).join(' ')+` L${x(10)},${y(0)} L${x(0)},${y(0)} Z`,fill:'color-mix(in srgb,var(--teal) 12%,transparent)'},s);
+  el('path',{d:tr.map((v,t)=>(t?'L':'M')+x(t)+','+y(v)).join(' '),fill:'none',stroke:'var(--teal)','stroke-width':3,'stroke-linejoin':'round'},s);
+  tr.forEach((v,t)=>{const c=el('circle',{cx:x(t),cy:y(v),r:t===10?6:3.5,fill:t===10?'var(--teal)':'var(--card)',stroke:'var(--teal)','stroke-width':2},s);bindTip(host,c,(t===0?'البداية':'نهاية السنة '+t)+': '+fmt(v,1)+' م',x(t),y(v))});
+  const f=tr[10];el('text',{x:x(10)+10,y:y(f)+(y(f)<T+20?16:-10),'text-anchor':'start',class:'lbl-v'},s,fmt(f,0)+' م');
+}
+function renderModel(){
+  const tr=traj(st.base,st.r,st.c,st.a),f=tr[10],g=1000-f,rq=req(st.base,st.r,st.a);
+  $('#o-r').textContent=st.r+'٪';$('#o-c').textContent=st.c.toFixed(1)+' م';$('#o-a').textContent=st.a+' م';
+  $('#m-final').textContent=fmt(f,0)+' م';$('#m-final').style.color=f>=999.5?'var(--teal)':'var(--ink)';
+  $('#m-gap').textContent=g<=0.5?'تحقق ✓':fmt(g,0)+' م';$('#m-gap').style.color=g<=0.5?'var(--teal)':'var(--rust)';
+  $('#m-req').textContent=rq<=0?'لا حاجة':fmt(rq,1)+' م';
+  $('#in-r').value=st.r;$('#in-c').value=st.c;$('#in-a').value=st.a;
+  $$('[data-base]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.base===st.base)));
+  modelChart();
+  $$('.sc').forEach(b=>b.classList.toggle('hit',st.base===59.5&&st.r===7&&b.dataset.c==String(st.c)&&b.dataset.a==String(st.a)));
+}
+$('#in-r').addEventListener('input',e=>{st.r=+e.target.value;renderModel()});
+$('#in-c').addEventListener('input',e=>{st.c=+e.target.value;renderModel()});
+$('#in-a').addEventListener('input',e=>{st.a=+e.target.value;renderModel()});
+$$('[data-base]').forEach(b=>b.addEventListener('click',()=>{st.base=+b.dataset.base;renderModel()}));
+function preset(c,a){st.base=59.5;st.r=7;st.c=c;st.a=a;renderModel()}
+$$('#presets button').forEach(b=>b.addEventListener('click',()=>{const [c,a]=b.dataset.p.split(',').map(Number);preset(c,a)}));
+const SC=[["العائد وحده 7٪ من 59.5 م",0,0,117],["عائد 7٪ + أوقاف جديدة 25 م سنويًا",25,0,462],["استحواذ 300 م + عائد 7٪",0,300,707],["استحواذ 300 م + 7٪ + 21.2 م سنويًا",21.2,300,1000]];
+$('#scen').innerHTML=SC.map(([l,c,a,v])=>`<button class="sc" data-c="${c}" data-a="${a}" aria-label="${l}: ${v} مليون"><span>${l}</span><span class="t"><span style="width:${Math.min(100,v/10)}%"></span></span><b class="num">${v.toLocaleString('en-US')}</b></button>`).join('');
+$$('.sc').forEach(b=>b.addEventListener('click',()=>{preset(+b.dataset.c,+b.dataset.a);$('#model').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}));
+
+/* ---------- ratios ---------- */
+const RAT=[
+["الربحية","هامش مجمل الربح","47.6٪","42.9٪","23.8٪","bad","انضغاط حاد مع تحوّل المزيج إلى عقود الخدمات"],
+["الربحية","هامش EBITDA","(23.9٪)","15.4٪","11.6٪","watch","تراجع لأن التكلفة نمت أسرع من الإيراد"],
+["الربحية","العائد على حقوق الشركاء","—","لا يُحتسب","115٪","watch","مرتفع لصغر رأس المال لا لجودة الربح"],
+["الربحية","العائد على الأصول","—","35.9٪","15.5٪","watch","انخفض مع تضخم الأصول بالذمم والمعدات"],
+["السيولة","نسبة التداول","5.15","3.17","4.47","good","مرتفعة شكليًا لأن الذمم 77٪ من الأصول المتداولة"],
+["السيولة","نسبة النقدية","4.56","2.47","0.86","bad","النقد لا يغطي الالتزامات المتداولة"],
+["المخاطر","الديون ÷ حقوق الشركاء","سالب","5.35×","4.80×","bad","رافعة عالية على رأس مال 100 ألف ريال"],
+["المخاطر","إجمالي الالتزامات ÷ الأصول","131٪","89٪","86٪","bad","القرض وحده يعادل 69٪ من الأصول"],
+["المخاطر","فترة تحصيل الذمم (يوم)","8","29","114","bad","تضاعفت نحو أربع مرات خلال سنة"],
+["المخاطر","الذمم المدينة ÷ إجمالي الأصول","3٪","15٪","56٪","bad","أكبر أصل في الشركة ذمم بلا مخصص هبوط"],
+["الكفاءة","دوران الأصول","—","2.46","2.63","good","الأصول تولّد إيرادًا بكفاءة"],
+["الكفاءة","الرواتب ÷ الإيرادات","53.4٪","18.8٪","6.3٪","good","رافعة تشغيلية إيجابية"]];
+const VL={bad:["مقلق","v-bad"],watch:["يُراقب","v-watch"],good:["سليم","v-good"]};
+function renderRat(f){
+  const rows=RAT.filter(r=>f==='all'||r[5]===f);let prev='';
+  $('#rat-table tbody').innerHTML=rows.map(r=>{const ax=r[0]!==prev||f!=='all'?r[0]:'';prev=r[0];return `<tr><td class="axis-cell">${ax}</td><td>${r[1]}</td><td class="n">${r[2]}</td><td class="n">${r[3]}</td><td class="n"><b>${r[4]}</b></td><td><span class="v-chip ${VL[r[5]][1]}">${VL[r[5]][0]}</span></td><td class="small" style="color:var(--ink-2);min-width:200px">${r[6]}</td></tr>`}).join('');
+}
+$$('#rat-filter button').forEach(b=>b.addEventListener('click',()=>{$$('#rat-filter button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderRat(b.dataset.f)}));
+renderRat('all');
+
+/* ---------- documents ---------- */
+const DOCS=[
+["WQ-001","قضائي","وثيقة الوقف المعتمدة من محكمة الأحوال الشخصية","24/11/1443هـ","محكمة الأحوال الشخصية بالمدينة المنورة","أصل مرجعي","ربط وثيقة التوثيق السابقة"],
+["WQ-002","قضائي","حكم الاستئناف","29/11/1443هـ","محكمة الاستئناف بالمدينة المنورة","أصل مرجعي","التحقق من نهائية الحكم"],
+["WQ-003","تسجيل","شهادة الوقف المحدثة","09/02/2023م","جهة تسجيل الوقف","نسخة مرجعية","التحقق من بيانات التسجيل الحالية"],
+["WQ-004","تسجيل","شهادة الوقف المحدثة (1)","09/02/2023م","جهة تسجيل الوقف","نسخة مكررة","الاحتفاظ بنسخة مرجعية واحدة"],
+["WQ-005","تنظيمي","لائحة التسويق لأوقاف الجامعة","غير محدد","أوقاف الجامعة الإسلامية","مراجعة","تحديد رقم قرار الاعتماد"],
+["WQ-006","تنظيمي","لائحة تنمية الموارد المالية","غير محدد","أوقاف الجامعة الإسلامية","مراجعة","فحص التداخل مع لائحة التسويق"],
+["WQ-007","تنظيمي","اللائحة الداخلية للتنظيم المالي والمحاسبي","غير محدد","أوقاف الجامعة الإسلامية","مراجعة","طلب نسخة معتمدة"],
+["WQ-008","تنظيمي","القواعد التنظيمية على اللائحة المنظمة لإدارة الأوقاف في الجامعات","غير محدد","الجهة التنظيمية المختصة","مرجع تنظيمي","تحديد الإصدار الساري"],
+["WQ-009","حوكمة","مصفوفة الصلاحيات الرئيسة","غير محدد","أوقاف الجامعة الإسلامية","مراجعة","مطابقة التفويضات والقرارات"],
+["WQ-010","مالي","قوائم شركة السقيفة 2023","31/12/2023م","شركة السقيفة لتطوير الأعمال","مرجع مالي","الفترة تبدأ 27/09/2022م"],
+["WQ-011","مالي","قوائم شركة السقيفة 2024","31/12/2024م","شركة السقيفة لتطوير الأعمال","مرجع مالي","ربطها بالعقود"],
+["WQ-012","مالي","قوائم شركة السقيفة 2025","31/12/2025م","شركة السقيفة لتطوير الأعمال","مرجع مالي","ربطها بالعقود"],
+["WQ-013","تقرير","تقرير أوقاف الجامعة الإسلامية (عرض)","غير محدد","أوقاف الجامعة الإسلامية","مساند","تحديد نسخة التقرير المعتمدة"],
+["WQ-014","تقرير","تقرير أوقاف الجامعة الإسلامية (PDF)","غير محدد","أوقاف الجامعة الإسلامية","مساند","مقارنة المحتوى مع العرض"]];
+const cats=["الكل",...new Set(DOCS.map(d=>d[1]))];
+$('#doc-filter').innerHTML=cats.map((c,i)=>`<button aria-pressed="${i===0}" data-c="${c}">${c} · ${c==='الكل'?DOCS.length:DOCS.filter(d=>d[1]===c).length}</button>`).join('');
+function renderDocs(c){$('#doc-table tbody').innerHTML=DOCS.filter(d=>c==='الكل'||d[1]===c).map(d=>`<tr><td><span class="code">${d[0]}</span></td><td style="font-weight:700;min-width:180px">${d[2]}</td><td>${d[1]}</td><td class="n">${d[3]}</td><td class="small" style="min-width:150px">${d[4]}</td><td class="small">${d[5]}</td><td class="small" style="color:var(--ink-2);min-width:160px">${d[6]}</td></tr>`).join('')}
+$$('#doc-filter button').forEach(b=>b.addEventListener('click',()=>{$$('#doc-filter button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderDocs(b.dataset.c)}));
+renderDocs('الكل');
+
+/* ---------- tabs ---------- */
+const tabs=$$('#ftabs [role=tab]');
+function openTab(name){tabs.forEach(t=>{const on=t.id==='t-'+name;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;$('#'+t.getAttribute('aria-controls')).hidden=!on})}
+tabs.forEach((t,i)=>{t.addEventListener('click',()=>openTab(t.id.slice(2)));t.addEventListener('keydown',e=>{let j=null;if(e.key==='ArrowLeft')j=(i+1)%tabs.length;if(e.key==='ArrowRight')j=(i-1+tabs.length)%tabs.length;if(j!==null){e.preventDefault();tabs[j].focus();openTab(tabs[j].id.slice(2))}})});
+document.addEventListener('click',e=>{const a=e.target.closest('[data-open-tab]');if(a)openTab(a.dataset.openTab)});
+const seg=$$('#saqifa .seg [role=tab]');
+seg.forEach(b=>b.addEventListener('click',()=>{seg.forEach(x=>{const on=x===b;x.setAttribute('aria-selected',on);$('#'+x.getAttribute('aria-controls')).hidden=!on})}));
+
+/* ---------- scroll spy ---------- */
+const links=$$('#route a'),ids=links.map(a=>a.getAttribute('href').slice(1));
+const spy=()=>{let cur=ids[0];const y=window.scrollY+120;ids.forEach(id=>{const s=document.getElementById(id);if(s&&s.offsetTop<=y)cur=id});links.forEach(a=>{const on=a.getAttribute('href')==='#'+cur;a.classList.toggle('on',on);if(on&&a.dataset.last!=='1'){links.forEach(x=>x.dataset.last='');a.dataset.last='1';const r=$('#route');const ar=a.getBoundingClientRect(),rr=r.getBoundingClientRect();if(ar.left<rr.left||ar.right>rr.right)r.scrollBy({left:ar.left-rr.left-rr.width/2+ar.width/2})}})};
+window.addEventListener('scroll',spy,{passive:true});
+
+/* ---------- render & resize ---------- */
+function drawAll(){barsChart();marginsChart();bridgeChart();fundChart();modelChart();drawWires()}
+renderModel();drawAll();spy();
+let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(drawAll,120)});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(drawWires);
+if(window.ResizeObserver){new ResizeObserver(()=>drawWires()).observe(map)}
+})();
+</script>
+
+</body></html>
