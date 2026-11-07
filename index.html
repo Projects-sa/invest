@@ -81,7 +81,7 @@ p{margin:0}
 .arch .sub{text-align:center;font-size:14.5px;color:var(--hero-mute);margin-top:6px}
 .ruler{margin-top:26px;position:relative;height:72px}
 .ruler .track{position:absolute;inset-inline:0;top:30px;height:8px;border-radius:8px;background:rgba(246,242,233,.12);overflow:hidden}
-.ruler .fill{position:absolute;inset-block:0;right:0;width:5.95%;background:linear-gradient(270deg,#E0BC76,#C99A4A);border-radius:8px}
+.ruler .fill{position:absolute;inset-block:0;right:0;width:8.45%;background:linear-gradient(270deg,#E0BC76,#C99A4A);border-radius:8px}
 .ruler .fill2{position:absolute;inset-block:0;right:5.95%;width:2.45%;background:repeating-linear-gradient(135deg,rgba(224,188,118,.65) 0 3px,transparent 3px 6px)}
 .ruler .tick{position:absolute;top:44px;font-size:12px;color:var(--hero-mute);transform:translateX(50%);white-space:nowrap}
 .ruler .tick::before{content:"";position:absolute;top:-8px;left:50%;width:1px;height:6px;background:rgba(246,242,233,.35)}
@@ -146,7 +146,7 @@ section{scroll-margin-top:72px}
 .btn:hover{filter:brightness(.97)}
 
 /* ===== KPI ===== */
-.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .kpi{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 20px 16px;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s;min-width:0}
 .kpi:hover{border-color:var(--teal);transform:translateY(-2px)}
 .kpi .v{font-size:34px;font-weight:900;line-height:1.15;color:var(--ink)}
@@ -333,6 +333,7 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
   .hero .wrap{grid-template-columns:1fr;gap:28px}
   .arch{max-width:460px;width:100%;margin-inline:auto}
   .kpis,.axes,.team,.g3,.gaps3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpi .v{font-size:30px}
   .model{grid-template-columns:1fr}
   .colophon{grid-template-columns:1fr 1fr}
   .tl{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -347,7 +348,8 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
   .map svg.wires{display:none}
   .mob-own{display:block;font-size:12.5px;color:var(--muted);margin-top:6px}
   .n-waqf .mob-own{color:#E3F1EF}
-  .kpis,.axes,.team,.g2,.g3,.gaps3,.limits,.nlist,.miss-list,.tl{grid-template-columns:1fr}
+  .axes,.team,.g2,.g3,.gaps3,.limits,.nlist,.miss-list,.tl{grid-template-columns:1fr}
+  .kpis{gap:10px}.kpi{padding:14px 14px 12px}.kpi .v{font-size:24px}.kpi .l{font-size:14.5px}.kpi .d{font-size:13px}
   .targets{grid-template-columns:repeat(2,minmax(0,1fr))}
   .detail{grid-template-columns:1fr}
   .thesis{grid-template-columns:1fr}.thesis .seal{display:none}
@@ -399,20 +401,19 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
         <span class="chip-h">الأرقام بالريال السعودي · م = مليون</span>
       </div>
     </div>
-    <div class="arch" role="img" aria-label="أصول الوقف الدفترية 59.5 مليون ريال تمثل نحو 6 بالمئة من هدف المليار">
-      <div class="k">أصول الوقف الدفترية في 31 ديسمبر 2025</div>
-      <div class="big num">59.5<small>مليون</small></div>
-      <div class="sub">نحو <b class="num">6٪</b> من الطريق إلى المليار · والنمو السنوي اللازم <b class="num">32.6٪</b></div>
+    <div class="arch" role="img" aria-label="أصول الوقف 84.5 مليون ريال تمثل نحو 8.5 بالمئة من هدف المليار">
+      <div class="k">أصول وقف الجامعة الإسلامية في 31 ديسمبر 2025</div>
+      <div class="big num">84.5<small>مليون</small></div>
+      <div class="sub">نحو <b class="num">8.5٪</b> من الطريق إلى المليار · والنمو السنوي اللازم <b class="num">28.0٪</b></div>
       <div class="ruler" aria-hidden="true">
-        <div class="pin" style="right:5.95%">59.5</div>
-        <div class="track"><div class="fill"></div><div class="fill2"></div></div>
+        <div class="pin" style="right:8.45%">84.5</div>
+        <div class="track"><div class="fill"></div></div>
         <div class="tick" style="right:0%">0</div>
         <div class="tick" style="right:25%">250</div>
         <div class="tick" style="right:50%">500</div>
         <div class="tick" style="right:75%">750</div>
         <div class="tick" style="right:100%">1,000 م</div>
       </div>
-      <div class="sub" style="margin-top:4px;font-size:13px">الجزء المخطط يمتد إلى 84 م، الرقم المعلن قيد المطابقة</div>
     </div>
   </div>
 </section>
@@ -437,23 +438,22 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
       <button class="node n-waqf" style="grid-area:waqf" data-id="waqf" aria-pressed="true">
         <span class="role">الكيان محل الدراسة · شريك 49٪</span>
         <span class="nm">وقف الجامعة الإسلامية</span>
-        <span class="fig">أصول دفترية <b class="num">59.5 م</b> · مرخّص من الهيئة العامة للأوقاف</span>
+        <span class="fig">أصول <b class="num">84.5 م</b> · مرخّص من الهيئة العامة للأوقاف</span>
       </button>
-      <button class="node n-saq" style="grid-area:saq" data-id="saq" aria-pressed="false">
+      <button class="node" style="grid-area:saq" data-id="saq" aria-pressed="false">
         <span class="role">الذراع الاستثمارية والتشغيلية</span>
         <span class="nm">شركة السقيفة لتطوير الأعمال</span>
-        <span class="fig">إيرادات <b class="num">25.9 م</b> · حقوق <b class="num">2.08 م</b> · قروض <b class="num">10 م</b></span>
-        <span class="flag">حصة الوقف غير مقيدة في قوائمه</span>
-        <span class="mob-own">مملوكة 51٪ للجامعة (51,000 ريال) و49٪ للوقف (49,000 ريال)</span>
+        <span class="fig">إيرادات <b class="num">25.9 م</b></span>
+        <span class="mob-own">مملوكة 51٪ للجامعة و49٪ للوقف</span>
       </button>
       <button class="node" style="grid-area:fund" data-id="fund" aria-pressed="false">
-        <span class="role">95٪ من أصول الوقف</span>
+        <span class="role">96٪ من أصول الوقف</span>
         <span class="nm">صندوق منصة إحسان</span>
-        <span class="fig"><b class="num">56.4 م</b> · عائد مسجل: صفر</span>
+        <span class="fig"><b class="num">81.4 م</b></span>
         <span class="mob-own">استثمار الوقف</span>
       </button>
       <button class="node" style="grid-area:cash" data-id="cash" aria-pressed="false">
-        <span class="role">5٪ من أصول الوقف</span>
+        <span class="role">4٪ من أصول الوقف</span>
         <span class="nm">نقد الوقف</span>
         <span class="fig"><b class="num">3.08 م</b> · ارتفع 2.63 م في 2025</span>
         <span class="mob-own">حسابات الوقف البنكية</span>
@@ -461,7 +461,6 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     </div>
 
     <div class="detail" id="detail" aria-live="polite"></div>
-    <p class="src">إيضاح رأس المال في قوائم السقيفة المراجعة 2025، ومسودتا قوائم الوقف 2024 و2025، وتعريف الكيانات المعدّ من الفريق.</p>
 
     <div class="thesis" style="margin-top:34px">
       <svg class="seal" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 3 L37 18 L54 14 L46 30 L54 46 L37 42 L30 57 L23 42 L6 46 L14 30 L6 14 L23 18Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="30" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
@@ -480,13 +479,13 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     <div class="sec-head">
       <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٢</div>
       <div class="kicker">الخلاصة التنفيذية</div>
-      <h2 id="h-sum">أصول تتجاوز 60 مليونًا، وذراع تشغيلية تنمو بسرعة</h2>
-      <p>ستة أرقام تختصر الوضع الراهن. كل بطاقة تقود إلى القسم الذي يشرحها.</p>
+      <h2 id="h-sum">أصول تتجاوز 84 مليونًا، وذراع تشغيلية تنمو بسرعة</h2>
+      <p>أربعة أرقام تختصر الوضع الراهن. كل بطاقة تقود إلى القسم الذي يشرحها.</p>
     </div>
 
     <div class="thesis">
       <svg class="seal" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 3 L37 18 L54 14 L46 30 L54 46 L37 42 L30 57 L23 42 L6 46 L14 30 L6 14 L23 18Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="30" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-      <p class="q">المليار تحدٍّ منطقي إذا عُرّف <b>هدفًا لتنمية الأصول</b> لا هدفًا لعائد الاستثمار؛ فالعائد وحده يبلغ بنا نحو 117 مليونًا، والفارق تصنعه الأوقاف الجديدة والاستحواذ العقاري.</p>
+      <p class="q">المليار تحدٍّ منطقي إذا عُرّف <b>هدفًا لتنمية الأصول</b> لا هدفًا لعائد الاستثمار؛ فالعائد وحده يبلغ بنا نحو 166 مليونًا، والفارق تصنعه الأوقاف الجديدة والاستحواذ العقاري.</p>
     </div>
 
     <div class="kpis">
@@ -502,36 +501,16 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
       </a>
       <a class="kpi" href="#bridge">
         <span class="v bad num"><span class="ltr">(3.74)</span> م</span><span class="l">التدفق النقدي التشغيلي للسقيفة</span>
-        <span class="d">ربح دفتري 1.52 م لم يتحول إلى نقد. الذمم المدينة قفزت إلى 8.1 م (114 يوم تحصيل)، وموّل قرض جديد بـ7 م العجز.</span>
+        <span class="d"></span>
         <span class="go">← من الربح إلى النقد</span>
       </a>
-      <a class="kpi" href="#fund">
-        <span class="v gold num">صفر</span><span class="l">العائد المسجل على 56.4 م في صندوق إحسان</span>
-        <span class="d">لم تسجل قوائم الوقف عائدًا في سنتين. نقدّر أن العائد الفعلي قد يقارب 2.6 م (4.7٪) إن كانت زيادة النقد توزيعات من الصندوق، وهذا يحتاج تأكيدًا.</span>
-        <span class="go">← الصندوق الوقفي</span>
-      </a>
-      <a class="kpi" href="#entity">
-        <span class="v gold num">0 ريال</span><span class="l">غلة السقيفة الموزعة على الوقف</span>
-        <span class="d">يملك الوقف 49٪ ونصيبه من ربح 2025 قرابة 0.75 م، لكن الأرباح مبقاة في الشركة بتوصية مجلس المديرين.</span>
-        <span class="go">← خريطة الكيان</span>
-      </a>
       <a class="kpi" href="#model">
-        <span class="v num">32.6٪</span><span class="l">النمو السنوي اللازم لبلوغ المليار</span>
-        <span class="d">من الأساس الدفتري 59.5 م. لا يوجد عائد استثماري يحقق ذلك، فالمليار يحتاج محركات نمو غير العائد: أوقاف جديدة واستحواذات.</span>
+        <span class="v num">28.0٪</span><span class="l">النمو السنوي اللازم لبلوغ المليار</span>
+        <span class="d">من أصول الوقف 84.5 م. لا يوجد عائد استثماري يحقق ذلك، فالمليار يحتاج محركات نمو غير العائد: أوقاف جديدة واستحواذات.</span>
         <span class="go">← نموذج المليار التفاعلي</span>
       </a>
     </div>
 
-    <div class="limits">
-      <div class="card">
-        <span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg></span>
-        <div><h4>قوائم السقيفة: مراجعة برأي نظيف</h4><p class="small muted">ثلاث فترات راجعها مكتب السديس محاسبون قانونيون. الفترة الأولى 15 شهرًا (27 سبتمبر 2022 – 31 ديسمبر 2023)، فلا تُقارن مباشرة بما بعدها.</p></div>
-      </div>
-      <div class="card">
-        <span class="ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L2 18a2 2 0 001.7 3h16.6a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg></span>
-        <div><h4>قوائم الوقف: مسودات غير مراجعة</h4><p class="small muted">قوائم 2024 و2025 مسودات، ويتعامل معها الفريق مؤشرًا لا مرجعًا نهائيًا إلى أن تصدر مراجَعة.</p></div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -551,14 +530,14 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
         <p class="small muted">مليون ريال · صافي الربح قبل الزكاة</p>
         <div class="legend" style="margin-top:10px"><span><i class="c-rev" style="background:var(--teal)"></i>الإيرادات</span><span><i style="background:var(--sky)"></i>مجمل الربح</span><span><i style="background:var(--gold)"></i>صافي الربح</span></div>
         <div class="chart" id="ch-bars"></div>
-        <p class="src">قوائم الدخل المراجعة. الفترة الأولى 15 شهرًا.</p>
+        <p class="src">قوائم الدخل لشركة السقيفة. الفترة الأولى 15 شهرًا.</p>
       </div>
       <div class="card">
         <h3>هامشا مجمل الربح وصافي الربح</h3>
         <p class="small muted">نسبة من الإيرادات</p>
         <div class="legend" style="margin-top:10px"><span><i class="ln" style="background:var(--sky)"></i>هامش مجمل الربح</span><span><i class="ln" style="background:var(--gold)"></i>هامش صافي الربح</span></div>
         <div class="chart" id="ch-margins"></div>
-        <p class="src">محسوب من قوائم الدخل المراجعة.</p>
+        <p class="src">محسوب من قوائم الدخل لشركة السقيفة.</p>
       </div>
     </div>
 
@@ -574,7 +553,7 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     <div class="card" id="bridge" style="margin-top:18px;scroll-margin-top:80px">
       <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline">
         <h3>من الربح إلى النقد في 2025</h3>
-        <span class="small muted">مليون ريال · قائمة التدفقات النقدية المراجعة</span>
+        <span class="small muted">مليون ريال · قائمة التدفقات النقدية</span>
       </div>
       <p class="small muted" style="margin-top:4px;max-width:70ch">ربح قبل الزكاة 1.58 م تحوّل إلى تدفق تشغيلي سالب بعد أن ابتلعت الذمم المدينة 7.34 م، ثم جاء القرض الجديد ليغطي العجز وشراء المعدات.</p>
       <div class="chart" id="ch-bridge" style="margin-top:12px"></div>
@@ -669,33 +648,35 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     <div class="sec-head">
       <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٥</div>
       <div class="kicker">الصندوق الوقفي</div>
-      <h2 id="h-fund">أصل كبير بلا قياس</h2>
-      <p>تعرض قوائم الوقف الأصول بشكل صحيح تقريبًا، لكنها تخطئ في تصنيف حقوق الوقف وفي قائمة الدخل، ولا تقيس عائد الصندوق.</p>
+      <h2 id="h-fund">أصل كبير يحتاج إطارًا لقياس عائده</h2>
+      <p>يمثل الصندوق 96٪ من أصول الوقف بقيمة 81.4 م، وتتسق أصول الوقف بعد التسوية مع أداء الصندوق المعلن. تبقى ملاحظات على طريقة عرض الصندوق في القوائم وعلى قياس عائده.</p>
     </div>
 
     <div class="grid" style="grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:22px" id="fund-grid">
       <div style="display:grid;gap:18px;align-content:start;min-width:0">
         <div class="tbl-wrap">
           <table>
-            <thead><tr><th>البند (مسودة غير مراجعة)</th><th class="n">2024</th><th class="n">2025</th><th class="n">التغير</th></tr></thead>
+            <thead><tr><th>أصول الوقف في 31 ديسمبر 2025</th><th class="n">ريال</th></tr></thead>
             <tbody>
-              <tr><td>النقد لدى البنوك</td><td class="n">447,207</td><td class="n">3,082,154</td><td class="n up">+2,634,947</td></tr>
-              <tr><td>استثمارات في صندوق منصة إحسان</td><td class="n">56,404,541</td><td class="n">56,404,541</td><td class="n">0</td></tr>
-              <tr class="tot"><td>إجمالي أصول الوقف</td><td class="n">56,851,748</td><td class="n">59,486,695</td><td class="n">+4.6٪</td></tr>
-              <tr><td>العائد على الاستثمارات (مسجل)</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr>
-              <tr><td>المصروفات ومصاريف النظارة</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr>
+              <tr><td>النقد لدى البنوك</td><td class="n">3,082,154</td></tr>
+              <tr><td>وحدات صندوق منصة إحسان كما في القوائم</td><td class="n">56,404,541</td></tr>
+              <tr><td>وحدات إضافية في الصندوق (تسوية الفريق)</td><td class="n">25,000,000</td></tr>
+              <tr class="tot"><td>إجمالي الاستثمار في الصندوق</td><td class="n">81,404,541</td></tr>
+              <tr class="tot"><td>إجمالي أصول الوقف</td><td class="n">84,486,695</td></tr>
+              <tr><td class="muted">أداء الصندوق المعلن في تقرير الأوقاف</td><td class="n muted">84,483,298</td></tr>
             </tbody>
           </table>
         </div>
 
-        <div class="card" id="gap84">
-          <h3>فجوة الـ84 مليونًا</h3>
-          <p class="small muted" style="margin-block:4px 12px">رقمان للوقف في وثائق المشروع، ولا بد من مطابقتهما قبل أي قرار.</p>
+        <div class="card" id="reconcile">
+          <h3>تسوية أصول الوقف</h3>
+          <p class="small muted" style="margin-block:4px 12px">مليون ريال · مكوّنات أصول الوقف مقابل الأداء المعلن</p>
           <div class="gap-viz">
-            <div class="gbar"><span>أصول الوقف في المسودة</span><span class="t"><span style="width:70.4%;background:var(--teal)"></span></span><b class="num">59.5 م</b></div>
-            <div class="gbar"><span>أداء الصندوق الوقفي المعلن</span><span class="t"><span style="width:100%;background:var(--gold)"></span></span><b class="num">84.5 م</b></div>
+            <div class="gbar"><span>مكوّنات الأصول</span><span class="t"><span style="width:66.8%;background:var(--teal)"></span><span style="width:29.6%;right:66.8%;background:color-mix(in srgb,var(--teal) 45%,transparent)"></span><span style="width:3.6%;right:96.4%;background:var(--sky)"></span></span><b class="num">84.5 م</b></div>
+            <div class="gbar"><span>الأداء المعلن</span><span class="t"><span style="width:100%;background:var(--gold)"></span></span><b class="num">84.5 م</b></div>
           </div>
-          <div class="callout" style="margin-top:14px">الفرق <b class="num">24.5 م (41٪)</b>. قد يكون صافي قيمة الأصول الحالية للصندوق، أو أصولًا أخرى غير مقيدة، أو تعهدات لم تُحصَّل. اعتماد أيٍّ من الرقمين قبل مطابقته يُضعف الحصافة في القرار الاستثماري، وهي معيار تقييم صريح في دليل الزمالة.</div>
+          <div class="legend" style="margin-top:10px"><span><i style="background:var(--teal)"></i>56.4 م في القوائم</span><span><i style="background:color-mix(in srgb,var(--teal) 45%,transparent)"></i>25 م وحدات إضافية</span><span><i style="background:var(--sky)"></i>3.08 م نقد</span></div>
+          <div class="callout" style="margin-top:12px">يرجّح الفريق أن مبلغ <b class="num">25 م</b> وحداتُ اشتراك إضافية في الصندوق الوقفي، جاءت مع توسّع الصندوق من 50.2 م في 1445هـ إلى 84.5 م في 1446هـ، ولم تنعكس في قيمة الاستثمار المعروضة في القوائم. ويُعتمد الرقم نهائيًا بكشف وحدات من مدير الصندوق.</div>
           <div style="margin-top:16px">
             <p class="small" style="font-weight:700">نمو أصول الصندوق كما في تقرير الأوقاف</p>
             <div class="chart" id="ch-fund" style="margin-top:6px"></div>
@@ -705,25 +686,24 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
 
       <div style="display:grid;gap:18px;align-content:start;min-width:0">
         <div>
-          <h3 style="font-size:19px;margin-bottom:12px">ملاحظات جوهرية على قوائم الوقف</h3>
+          <h3 style="font-size:19px;margin-bottom:12px">ملاحظات على عرض الصندوق والقوائم</h3>
           <div class="obs">
-            <div class="ob"><h4>تصنيف معكوس لحقوق الوقف <span class="v-chip v-bad">عالية</span></h4><p>قُيّد النقد على أنه «رأس مال الوقف الأصلي»، وقُيّدت الاستثمارات (56.4 م) على أنها «ريع محتجز». والصحيح غالبًا عكس ذلك: المبلغ المستثمر هو الأصل الموقوف، والريع هو ما يتولد منه.</p></div>
-            <div class="ob"><h4>الإيراد نفسه مسجل مرتين <span class="v-chip v-bad">عالية</span></h4><p>ظهرت تبرعات 56.4 م إيرادًا في قائمة دخل 2024 ثم مرة أخرى في 2025، و«إجمالي دخل الوقف» يساوي إجمالي الأصول في السنتين. قائمة الدخل بهذه الصورة رصيد تراكمي لا أداء سنوي.</p></div>
-            <div class="ob"><h4>القوائم غير متوازنة <span class="v-chip v-bad">عالية</span></h4><p>في 2024: الأصول <span class="num">56,851,748</span>، وإجمالي أموال الوقف <span class="num">56,404,541</span>، وإجمالي الالتزامات وأموال الوقف <span class="num">56,854,748</span>. ثلاثة أرقام مختلفة لما يجب أن يتساوى.</p></div>
-            <div class="ob"><h4>حصة الـ49٪ في السقيفة غائبة <span class="v-chip v-bad">عالية</span></h4><p>نصيب الوقف من حقوق السقيفة يقارب 1.02 م دفتريًا، ولا يظهر في أصول الوقف. <a href="#entity">انظر خريطة الكيان</a>.</p></div>
-            <div class="ob"><h4>لا تقييم للصندوق <span class="v-chip v-watch">متوسطة</span></h4><p>ثبات الرقم سنتين يعني أن الوحدات مقيدة بالتكلفة لا بصافي قيمة الأصول. زيادة النقد 2.63 م في 2025 تعادل 4.7٪ من قيمة الصندوق، وقد تكون توزيعات منه قُيّدت «ريع تبرعات». هذا افتراض يحتاج تأكيدًا.</p></div>
+            <div class="ob"><h4>تصنيف معكوس لحقوق الوقف <span class="v-chip v-bad">عالية</span></h4><p>قُيّد النقد على أنه «رأس مال الوقف الأصلي»، وقُيّدت الاستثمارات على أنها «ريع محتجز». والصحيح غالبًا عكس ذلك: المبلغ المستثمر هو الأصل الموقوف، والريع هو ما يتولد منه.</p></div>
+            <div class="ob"><h4>قائمة الدخل تعرض رصيدًا لا أداءً <span class="v-chip v-bad">عالية</span></h4><p>ظهرت تبرعات 56.4 م إيرادًا في قائمة دخل 2024 ثم مرة أخرى في 2025، و«إجمالي دخل الوقف» يساوي إجمالي الأصول في السنتين. قائمة الدخل بهذه الصورة رصيد تراكمي لا أداء سنوي.</p></div>
+            <div class="ob"><h4>توازن قائمة المركز المالي <span class="v-chip v-watch">متوسطة</span></h4><p>في 2024: الأصول <span class="num">56,851,748</span>، وإجمالي أموال الوقف <span class="num">56,404,541</span>، وإجمالي الالتزامات وأموال الوقف <span class="num">56,854,748</span>. ثلاثة أرقام لما يجب أن يتساوى.</p></div>
+            <div class="ob"><h4>قيمة الصندوق الكاملة خارج القوائم <span class="v-chip v-watch">متوسطة</span></h4><p>تعرض القوائم الصندوق بـ56.4 م، بينما قيمته بعد التسوية 81.4 م. توحيد العرض يجعل القوائم مرجعًا واحدًا لأصول الوقف.</p></div>
+            <div class="ob"><h4>تركّز في وعاء واحد <span class="v-chip v-watch">متوسطة</span></h4><p>96٪ من أصول الوقف في صندوق واحد، ولا تظهر في الوثائق شروطه ولا رسومه ولا تقارير صافي قيمة الأصول.</p></div>
           </div>
         </div>
 
         <div class="card">
-          <h3>العائد مقابل التضخم: ثلاث قراءات</h3>
+          <h3>معيار القياس المقترح للعائد</h3>
           <p class="small muted" style="margin-block:4px 12px">التضخم: متوسط 2025 لمؤشر أسعار المستهلك في المملكة نحو 2.1٪.</p>
           <div class="read3">
-            <div class="r3"><span>كما في المسودة</span><span class="pc num" style="color:var(--rust)">0٪</span><span class="ef small">أثر حقيقي <b class="dn num">(2.1٪)</b> · تآكل نحو 1.18 م سنويًا</span></div>
-            <div class="r3"><span>لو كانت زيادة النقد توزيعات من الصندوق</span><span class="pc num" style="color:var(--gold)">4.7٪</span><span class="ef small">أثر حقيقي <b class="up num">+2.6٪</b> · نمو حقيقي نحو 1.47 م</span></div>
+            <div class="r3"><span>الحد الأدنى للحفاظ على القيمة الحقيقية</span><span class="pc num" style="color:var(--gold)">2.1٪</span><span class="ef small">عائد أقل منه يعني تآكل قيمة الأصل الموقوف</span></div>
             <div class="r3"><span>مستهدف استرشادي لمحفظة وقفية متوازنة</span><span class="pc num" style="color:var(--teal)">6–7٪</span><span class="ef small">أثر حقيقي <b class="up num">+4 إلى +5٪</b> · يحتاج اعتماد مؤشر مرجعي</span></div>
           </div>
-          <p class="foot">المستهدف في السطر الثالث افتراض للنقاش، لا توصية بعائد محدد.</p>
+          <p class="foot">المستهدف افتراض للنقاش، لا توصية بعائد محدد. ويُقاس العائد الفعلي من كشوف صافي قيمة الأصول.</p>
         </div>
       </div>
     </div>
@@ -740,12 +720,12 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
       <p>مدخل لخريطة الفجوات يُستكمل مع قراءة الحوكمة والمخاطر. التصنيف مبني على الوثائق المتوفرة فقط.</p>
     </div>
     <div class="axes">
-      <div class="card"><div class="hd"><h4>الوجهة والسياسة</h4><span class="v-chip v-bad">غائب</span></div><p class="small" style="color:var(--ink-2)">لا تظهر في الوثائق المالية سياسة استثمار أو سياسة غلة أو هدف عائد مكتوب. لم يسجل الوقف عائدًا ولا مصروفًا ولا توزيعًا في سنتين.</p></div>
-      <div class="card"><div class="hd"><h4>تركيبة الأصول</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">نحو 95٪ من أصول الوقف (56.4 م) في وعاء واحد هو صندوق منصة إحسان، و5٪ نقد، ولا عقار. وللوقف حصة 49٪ في السقيفة.</p></div>
+      <div class="card"><div class="hd"><h4>الوجهة والسياسة</h4><span class="v-chip v-bad">غائب</span></div><p class="small" style="color:var(--ink-2)">لا تظهر في الوثائق المالية سياسة استثمار أو سياسة غلة أو هدف عائد مكتوب.</p></div>
+      <div class="card"><div class="hd"><h4>تركيبة الأصول</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">نحو 96٪ من أصول الوقف (81.4 م) في وعاء واحد هو صندوق منصة إحسان، و4٪ نقد، ولا عقار. وللوقف حصة 49٪ في السقيفة.</p></div>
       <div class="card"><div class="hd"><h4>نموذج الإدارة</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">الاستثمار مُدار عبر صندوق خارجي، لكن لا تظهر شروطه ولا رسومه ولا تقارير صافي قيمة الأصول. السقيفة ذراع تشغيلية مستقلة.</p></div>
-      <div class="card"><div class="hd"><h4>الحوكمة</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">قوائم السقيفة مراجعة برأي نظيف، أما قوائم الوقف فمسودة غير مراجعة وفيها أخطاء تصنيف وتوازن. <a href="#files" data-open-tab="gov">قراءة الحوكمة واللوائح</a>.</p></div>
-      <div class="card"><div class="hd"><h4>الامتثال</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">في السقيفة: الزكاة والقيمة المضافة مقيدتان ورأي المراجع نظيف. في الوقف: لا قوائم مراجعة لسنتين.</p></div>
-      <div class="card"><div class="hd"><h4>الأداء والمخاطر</h4><span class="v-chip v-bad">غائب</span></div><p class="small" style="color:var(--ink-2)">لا عائد مسجل، ولا مؤشر مرجعي، ولا حدود مخاطر معتمدة للوقف.</p></div>
+      <div class="card"><div class="hd"><h4>الحوكمة</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">لكل كيان قوائمه، وتحتاج قوائم الوقف تصحيح تصنيف حقوق الوقف وتوحيد عرض الصندوق. <a href="#files" data-open-tab="gov">قراءة الحوكمة واللوائح</a>.</p></div>
+      <div class="card"><div class="hd"><h4>الامتثال</h4><span class="v-chip v-watch">جزئي وغير موثّق</span></div><p class="small" style="color:var(--ink-2)">في السقيفة: الزكاة والقيمة المضافة مقيدتان. في الوقف: يلزم فصل الأصل الموقوف عن الغلة في القوائم.</p></div>
+      <div class="card"><div class="hd"><h4>الأداء والمخاطر</h4><span class="v-chip v-bad">غائب</span></div><p class="small" style="color:var(--ink-2)">لا مؤشر مرجعي معتمد لقياس عائد الصندوق، ولا حدود مخاطر معتمدة للوقف.</p></div>
     </div>
   </div>
 </section>
@@ -757,17 +737,14 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
       <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٧</div>
       <div class="kicker">النموذج المالي الأولي</div>
       <h2 id="h-model">تحدي المليار: ما الذي يوصلنا إليه؟</h2>
-      <p>من 59.5 م يلزم نمو سنوي مركب 32.6٪، ومن 84 م يلزم 28.1٪. لا توجد محفظة وقفية رشيدة تحقق ذلك بالعائد، لذلك يقيس النموذج ما يلزم من أوقاف جديدة كل سنة عند كل مستوى عائد. جرّب الافتراضات بنفسك.</p>
+      <p>من أصول الوقف 84.5 م يلزم نمو سنوي مركب 28.0٪. لا توجد محفظة وقفية رشيدة تحقق ذلك بالعائد، لذلك يقيس النموذج ما يلزم من أوقاف جديدة كل سنة عند كل مستوى عائد. جرّب الافتراضات بنفسك.</p>
     </div>
 
     <div class="model">
       <div class="controls">
         <div class="ctl">
           <span style="font-weight:700;font-size:15px">رقم الأساس</span>
-          <div class="seg" role="group" aria-label="رقم الأساس" style="margin-top:6px;display:flex">
-            <button id="b-595" aria-pressed="true" data-base="59.5" style="flex:1">59.5 م · المسودة</button>
-            <button id="b-84" aria-pressed="false" data-base="84" style="flex:1">84 م · المعلن</button>
-          </div>
+          <div class="hint" style="font-size:14px">أصول الوقف <b class="num" style="color:var(--teal)">84.5 م</b> في 31 ديسمبر 2025</div>
         </div>
         <div class="ctl">
           <label for="in-r">العائد السنوي المُعاد استثماره <output id="o-r">7٪</output></label>
@@ -775,8 +752,8 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
           <div class="hint">التضخم 2.1٪ · المستهدف الاسترشادي 6–7٪</div>
         </div>
         <div class="ctl">
-          <label for="in-c">أوقاف جديدة كل سنة <output id="o-c">21.2 م</output></label>
-          <input type="range" id="in-c" min="0" max="80" step="0.1" value="21.2">
+          <label for="in-c">أوقاف جديدة كل سنة <output id="o-c">17.7 م</output></label>
+          <input type="range" id="in-c" min="0" max="80" step="0.1" value="17.7">
           <div class="hint">تبرعات وأوقاف تُضاف في نهاية كل سنة</div>
         </div>
         <div class="ctl">
@@ -790,7 +767,7 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
             <button data-p="0,0">العائد وحده</button>
             <button data-p="25,0">+ أوقاف 25 م</button>
             <button data-p="0,300">+ استحواذ 300 م</button>
-            <button data-p="21.2,300">المسار الكامل</button>
+            <button data-p="17.7,300">المسار الكامل</button>
           </div>
         </div>
       </div>
@@ -811,19 +788,19 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     <div class="grid g2" style="margin-top:22px">
       <div class="card">
         <h3>القيمة بعد 10 سنوات تحت أربعة سيناريوهات</h3>
-        <p class="small muted" style="margin-block:4px 12px">مليون ريال · أساس 59.5 م وعائد 7٪ · اضغط سيناريو لتحميله في النموذج</p>
+        <p class="small muted" style="margin-block:4px 12px">مليون ريال · أساس 84.5 م وعائد 7٪ · اضغط سيناريو لتحميله في النموذج</p>
         <div class="scen" id="scen"></div>
       </div>
       <div class="card">
         <h3>العائد وحده لا يكفي</h3>
-        <p class="small muted" style="margin-block:4px 12px">مليون ريال · الأوقاف الجديدة المطلوبة سنويًا لبلوغ المليار دون استحواذ</p>
+        <p class="small muted" style="margin-block:4px 12px">مليون ريال · أساس 84.5 م · القيمة بعد 10 سنوات بالعائد وحده، والأوقاف الجديدة المطلوبة سنويًا لبلوغ المليار</p>
         <div class="tbl-wrap" style="border:0">
           <table>
-            <thead><tr><th>العائد</th><th class="n">القيمة · أساس 59.5</th><th class="n">أوقاف سنويًا</th><th class="n">القيمة · أساس 84</th><th class="n">أوقاف سنويًا</th></tr></thead>
+            <thead><tr><th>العائد</th><th class="n">القيمة</th><th class="n">دون استحواذ</th><th class="n">مع استحواذ 300</th></tr></thead>
             <tbody>
-              <tr><td><b>5٪</b></td><td class="n">96.9</td><td class="n">71.8</td><td class="n">136.8</td><td class="n">68.6</td></tr>
-              <tr><td><b>7٪</b></td><td class="n">117.0</td><td class="n"><b>63.9</b></td><td class="n">165.2</td><td class="n">60.4</td></tr>
-              <tr><td><b>9٪</b></td><td class="n">140.8</td><td class="n">56.6</td><td class="n">198.9</td><td class="n">52.7</td></tr>
+              <tr><td><b>5٪</b></td><td class="n">137.6</td><td class="n">68.6</td><td class="n">29.7</td></tr>
+              <tr><td><b>7٪</b></td><td class="n">166.2</td><td class="n"><b>60.3</b></td><td class="n"><b>17.6</b></td></tr>
+              <tr><td><b>9٪</b></td><td class="n">200.0</td><td class="n">52.7</td><td class="n">5.9</td></tr>
             </tbody>
           </table>
         </div>
@@ -831,9 +808,9 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     </div>
 
     <div class="grid g3" style="margin-top:18px">
-      <div class="card"><h4>الاستحواذ العقاري هو المحرك الحاسم</h4><p class="small" style="color:var(--ink-2);margin-top:6px">إن دخل 300 م أصلًا وقفيًا جديدًا انخفضت الأوقاف المطلوبة سنويًا من 64 م إلى 21 م عند عائد 7٪. وإن موّل بالدين فالأثر على صافي الوقف أقل كثيرًا.</p></div>
+      <div class="card"><h4>الاستحواذ العقاري هو المحرك الحاسم</h4><p class="small" style="color:var(--ink-2);margin-top:6px">إن دخل 300 م أصلًا وقفيًا جديدًا انخفضت الأوقاف المطلوبة سنويًا من 60.3 م إلى 17.6 م عند عائد 7٪. وإن موّل بالدين فالأثر على صافي الوقف أقل كثيرًا.</p></div>
       <div class="card"><h4>غلة السقيفة تكميلية لا محورية</h4><p class="small" style="color:var(--ink-2);margin-top:6px">نصيب الوقف من ربح 2025 نحو 0.75 م. قيمة السقيفة الأكبر أن تكون مطوّرًا ومشغّلًا للأصول المستحوذ عليها.</p></div>
-      <div class="card"><h4>شرط النموذج قبل توسيعه</h4><p class="small" style="color:var(--ink-2);margin-top:6px">رقم أساس مطابق (59.5 م أم 84 م)، وعائد فعلي للصندوق، وشروط الاستحواذ: التمويل والعائد الإيجاري المتوقع.</p></div>
+      <div class="card"><h4>شرط النموذج قبل توسيعه</h4><p class="small" style="color:var(--ink-2);margin-top:6px">توثيق الـ25 م بكشف وحدات من مدير الصندوق، وعائد فعلي موثّق للصندوق، وشروط الاستحواذ: التمويل والعائد الإيجاري المتوقع.</p></div>
     </div>
 
     <h3 style="font-size:20px;margin-top:36px">موقع التحدي في مصفوفة الدليل</h3>
@@ -844,7 +821,7 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
       <div class="cell pick"><h4>بناء نموذج إشراف استثماري جديد</h4><p>المليار بمحركات معتمدة ومقاسة.</p><span class="badge">◆ الموقع المقترح للتحدي</span></div>
       <div class="cell"><h4>نموذج ريادي قابل للتعميم</h4><p>نموذج «محركات المليار» قابل للنقل إلى أوقاف الجامعات.</p></div>
       <div class="ax side">حاجة حالية</div>
-      <div class="cell"><h4>معالجة أصل قائم</h4><p>رفع عائد الـ56.4 م المستثمرة.</p></div>
+      <div class="cell"><h4>معالجة أصل قائم</h4><p>رفع عائد الـ81.4 م المستثمرة في الصندوق.</p></div>
       <div class="cell"><h4>معالجة ممارسة شائعة</h4><p>قوائم وقف بلا فصل بين الأصل والغلة.</p></div>
     </div>
   </div>
@@ -856,18 +833,17 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     <div class="sec-head">
       <div class="sec-no" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M26 2 L32 14 L46 12 L40 25 L50 34 L36 37 L33 50 L26 42 L19 50 L16 37 L2 34 L12 25 L6 12 L20 14Z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".7"/></svg>٨</div>
       <div class="kicker">الفجوات ومدخلات خطة التحسين</div>
-      <h2 id="h-plan">أكبر ثلاث فجوات مالية، وخمسة إجراءات</h2>
-      <p>مسودة إجراءات بصيغة قالب الدليل، يختار منها الفريق الفجوة الرئيسة ويحوّلها إلى خطة من ثلاث إلى خمس خطوات.</p>
+      <h2 id="h-plan">أكبر ثلاث فجوات مالية، وأربعة إجراءات</h2>
+      <p>إجراءات بصيغة قالب الدليل، يختار منها الفريق الفجوة الرئيسة ويحوّلها إلى خطة من ثلاث إلى خمس خطوات.</p>
     </div>
     <div class="gaps3">
-      <div class="gap3 pattern"><div class="n">١</div><h3>القياس قبل الاستثمار</h3><p>لا عائد مسجل على 56.4 م، وقوائم الوقف غير مراجعة وفيها أخطاء تصنيف، فلا أساس رقميًا لأي قرار.</p></div>
-      <div class="gap3 pattern"><div class="n">٢</div><h3>التركّز مقابل الطموح</h3><p>95٪ من الأصول في وعاء واحد، والمليار يحتاج نحو 33٪ نموًا سنويًا لا يأتي من العائد.</p></div>
-      <div class="gap3 pattern"><div class="n">٣</div><h3>ذراع تشغيلية بلا غلة</h3><p>السقيفة تنمو بالدين وبذمم متضخمة، ولا توزع على الوقف.</p></div>
+      <div class="gap3 pattern"><div class="n">١</div><h3>القياس قبل الاستثمار</h3><p>لا يوجد مؤشر مرجعي معتمد لقياس عائد 81.4 م في الصندوق، ولا تعرض القوائم قيمته الكاملة.</p></div>
+      <div class="gap3 pattern"><div class="n">٢</div><h3>التركّز مقابل الطموح</h3><p>96٪ من الأصول في وعاء واحد، والمليار يحتاج نحو 28٪ نموًا سنويًا لا يأتي من العائد.</p></div>
+      <div class="gap3 pattern"><div class="n">٣</div><h3>ذراع تشغيلية تنمو بالدين</h3><p>السقيفة تنمو بقرض 10 م وبذمم مدينة متضخمة تضغط على سيولتها.</p></div>
     </div>
     <div class="steps">
-      <div class="step"><div class="gp">قوائم الوقف لا تصلح أساسًا للقرار</div><p class="act">إعادة إصدار قوائم الوقف 2024–2025 مراجَعةً من مراجع خارجي: فصل الأصل الموقوف عن الغلة، وإثبات وحدات صندوق إحسان بقيمتها العادلة، وإثبات حصة الـ49٪ في السقيفة.</p><dl><div><dt>المسؤول</dt><dd>إدارة الوقف + المراجع الخارجي</dd></div><div><dt>الأفق</dt><dd><span class="when">نهاية الربع الأول 2027</span></dd></div><div><dt>دليل الإنجاز</dt><dd>قوائم مراجَعة برأي، ومطابقة رقم 84 م مع الدفاتر</dd></div></dl></div>
-      <div class="step"><div class="gp">غياب قياس العائد</div><p class="act">استلام كشوف صافي قيمة الأصول للصندوق، وحساب العائد الفعلي للسنتين، ومقارنته بالتضخم (2.1٪) وبمؤشر مرجعي تعتمده لجنة الاستثمار.</p><dl><div><dt>المسؤول</dt><dd>المحلل المالي + إدارة الوقف</dd></div><div><dt>الأفق</dt><dd><span class="when">قبل 19 ديسمبر 2026</span></dd></div><div><dt>دليل الإنجاز</dt><dd>جدول عائد سنوي موثّق بالمصدر</dd></div></dl></div>
-      <div class="step"><div class="gp">السقيفة لا تُدِرّ غلة للوقف</div><p class="act">اعتماد سياسة توزيع أرباح للسقيفة بعد الوفاء بخدمة الدين، وتحويل جزء من الأرباح المبقاة إلى رأس المال.</p><dl><div><dt>المسؤول</dt><dd>الشركاء ومجلس مديري السقيفة</dd></div><div><dt>الأفق</dt><dd><span class="when">الربع الثاني 2027</span></dd></div><div><dt>دليل الإنجاز</dt><dd>قرار الشركاء وأول توزيع مستلم في حساب الوقف</dd></div></dl></div>
+      <div class="step"><div class="gp">عرض أصول الوقف في القوائم</div><p class="act">تحديث عرض قوائم الوقف: فصل الأصل الموقوف عن الغلة، وإثبات وحدات الصندوق كاملة بقيمتها العادلة (81.4 م) بعد توثيق الـ25 م بكشف من مدير الصندوق.</p><dl><div><dt>المسؤول</dt><dd>إدارة الوقف + المراجع الخارجي</dd></div><div><dt>الأفق</dt><dd><span class="when">نهاية الربع الأول 2027</span></dd></div><div><dt>دليل الإنجاز</dt><dd>قوائم تعرض أصول الوقف 84.5 م بتصنيف صحيح</dd></div></dl></div>
+      <div class="step"><div class="gp">قياس عائد الصندوق</div><p class="act">استلام كشوف صافي قيمة الأصول للصندوق، وحساب العائد الفعلي للسنتين، ومقارنته بالتضخم (2.1٪) وبمؤشر مرجعي تعتمده لجنة الاستثمار.</p><dl><div><dt>المسؤول</dt><dd>المحلل المالي + إدارة الوقف</dd></div><div><dt>الأفق</dt><dd><span class="when">قبل 19 ديسمبر 2026</span></dd></div><div><dt>دليل الإنجاز</dt><dd>جدول عائد سنوي موثّق بالمصدر</dd></div></dl></div>
       <div class="step"><div class="gp">ذمم 8.1 م بلا مخصص</div><p class="act">تقرير أعمار ديون شهري، وتكوين مخصص هبوط، وسقف تركّز لكل عميل، ومستهدف تحصيل لا يتجاوز 60 يومًا.</p><dl><div><dt>المسؤول</dt><dd>الإدارة المالية للسقيفة</dd></div><div><dt>الأفق</dt><dd><span class="when">6 أشهر</span></dd></div><div><dt>دليل الإنجاز</dt><dd>فترة التحصيل في القوائم الربعية</dd></div></dl></div>
       <div class="step"><div class="gp">هدف المليار بلا محركات</div><p class="act">بناء نموذج «محركات المليار» يحدد مساهمة كل محرك (أوقاف جديدة، عائد، استحواذ عقاري، غلة السقيفة) بمستهدف سنوي يعتمده مجلس النظارة.</p><dl><div><dt>المسؤول</dt><dd>فريق المشروع ← لجنة الاستثمار</dd></div><div><dt>الأفق</dt><dd><span class="when">الختام · 19 ديسمبر 2026</span></dd></div><div><dt>دليل الإنجاز</dt><dd>نموذج معتمد بمستهدفات 10 سنوات</dd></div></dl></div>
     </div>
@@ -928,7 +904,7 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
         <div><span class="code">G-07</span>البيانات المالية المستقلة للصندوق</div>
         <div><span class="code">G-08</span>مستندات العلاقة بين الوقف والسقيفة</div>
       </div>
-      <p class="foot">يرتبط سدّ الفجوتين G-06 وG-07 مباشرة بمطابقة <a href="#gap84">فجوة الـ84 مليونًا</a> وبحساب العائد الفعلي للصندوق. ويضيف الفريق إلى السجل مسودتي قوائم الوقف لعامي 2024 و2025 بوصفهما مرجعين ماليين.</p>
+      <p class="foot">يرتبط سدّ الفجوتين G-06 وG-07 مباشرة بتوثيق <a href="#reconcile">الـ25 م الإضافية في الصندوق</a> وبقياس عائده. ويضيف الفريق إلى السجل قوائم الوقف لعامي 2024 و2025 بوصفهما مرجعين ماليين.</p>
     </div>
 
     <!-- governance -->
@@ -999,8 +975,8 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
         <div class="card">
           <h3>مصادر التحليل</h3>
           <ul class="small" style="color:var(--ink-2);padding-inline-start:20px;margin:10px 0 0;display:grid;gap:6px">
-            <li>قوائم شركة السقيفة المراجعة لثلاث فترات: 2022–2023 (15 شهرًا)، و2024، و2025.</li>
-            <li>مسودتا القوائم المالية لوقف الجامعة الإسلامية لعامي 2024 و2025.</li>
+            <li>قوائم شركة السقيفة لثلاث فترات: 2022–2023 (15 شهرًا)، و2024، و2025.</li>
+            <li>القوائم المالية لوقف الجامعة الإسلامية لعامي 2024 و2025، مع تسوية الفريق لقيمة الصندوق.</li>
             <li>محضر الاجتماع الأول لمشروع التخرج (الأدوار والتحدي والأرقام المرجعية).</li>
             <li>تقرير أوقاف الجامعة الإسلامية (أصول الصندوق والمسيرة والمستهدفات).</li>
             <li>متوسط التضخم لعام 2025 من الهيئة العامة للإحصاء عبر البنك الدولي.</li>
@@ -1008,7 +984,7 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
         </div>
         <div class="card">
           <h3>معادلة نموذج المليار</h3>
-          <p class="small" style="color:var(--ink-2);margin-top:8px">القيمة في نهاية كل سنة = قيمة السنة السابقة × (1 + العائد) + الأوقاف الجديدة للسنة. يُضاف الاستحواذ العقاري إلى الأساس في بداية الأفق، ويُعاد استثمار العائد بالكامل، ولا يُخصم توزيع للغلة ولا مصروفات نظارة.</p>
+          <p class="small" style="color:var(--ink-2);margin-top:8px">القيمة في نهاية كل سنة = قيمة السنة السابقة × (1 + العائد) + الأوقاف الجديدة للسنة. الأساس أصول الوقف 84.5 م، ويُضاف الاستحواذ العقاري إليه في بداية الأفق، ويُعاد استثمار العائد بالكامل، ولا يُخصم توزيع للغلة ولا مصروفات نظارة.</p>
           <p class="small" style="color:var(--ink-2);margin-top:8px">الأوقاف اللازمة سنويًا = (1,000 − الأساس × (1+ع)<sup>10</sup>) ÷ معامل القيمة المستقبلية للدفعات ((1+ع)<sup>10</sup> − 1) ÷ ع.</p>
         </div>
         <div class="card">
@@ -1022,7 +998,7 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
         </div>
         <div class="card">
           <h3>حدود التحليل</h3>
-          <p class="small" style="color:var(--ink-2);margin-top:8px">التصنيف والأحكام مبنية على الوثائق المتوفرة فقط. أرقام الوقف مؤشرات أولية إلى أن تصدر قوائم مراجَعة، ويُعاد بناء النموذج بعد مطابقة رقم الأساس واستلام كشوف صافي قيمة الأصول.</p>
+          <p class="small" style="color:var(--ink-2);margin-top:8px">التصنيف والأحكام مبنية على الوثائق المتوفرة فقط. ويُحدَّث النموذج عند استلام كشف وحدات الصندوق وكشوف صافي قيمة الأصول وشروط الاستحواذ.</p>
         </div>
       </div>
     </div>
@@ -1038,16 +1014,14 @@ input[type=range]{width:100%;accent-color:var(--teal);margin-top:6px}
     <p class="intro">راجع الفريق كل رقم في هذا العرض مقابل مصدره. هذه ملاحظاتنا على مصادر الأرقام وحدودها، وما نعمل على مطابقته قبل اعتماد النموذج.</p>
     <ol class="nlist">
       <li><div><b>الفترة الأولى للسقيفة 15 شهرًا</b> (27 سبتمبر 2022 – 31 ديسمبر 2023)، فلا تُقارن نسب نموها مباشرة بما بعدها.</div></li>
-      <li><div><b>قوائم الوقف مسودات غير مراجعة</b>، ونستخدمها مؤشرًا لا مرجعًا نهائيًا. أما قوائم السقيفة فمراجعة برأي نظيف من السديس محاسبون قانونيون.</div></li>
-      <li><div><b>رقمان لأصول الوقف:</b> 59.5 م في المسودة و84.5 م في تقرير الأوقاف ومحضر الاجتماع. الفرق 24.5 م (41٪). نعتمد 59.5 م أساسًا للنموذج لأنه الرقم الدفتري، ونعرض 84 م بديلًا إلى أن تتم المطابقة. <a href="#gap84">التفاصيل</a>.</div></li>
-      <li><div><b>عائد الصندوق المسجل صفر.</b> رقم 4.7٪ (نحو 2.6 م) تقدير من الفريق مبني على زيادة النقد في 2025، ولا يصبح رقمًا معتمدًا إلا بكشوف صافي قيمة الأصول.</div></li>
-      <li><div><b>تسمية الصندوق:</b> تقيّد القوائم الاستثمار في «صندوق منصة إحسان»، بينما يعرّف ملف الكيانات «صندوق وقف الجامعة الإسلامية» الذي يديره الأهلي كابيتال. نعمل على توحيد التسمية والتحقق من أنهما الوعاء نفسه.</div></li>
+            <li><div><b>أصول الوقف 84.5 م:</b> نقد 3.08 م، واستثمار في الصندوق 81.4 م (56.4 م كما في القوائم و25 م وحدات إضافية يرجّح الفريق أنها اشتراكات لم تنعكس في القوائم). ويتطابق المجموع مع أداء الصندوق المعلن 84.48 م بفارق نحو 3 آلاف ريال. <a href="#reconcile">التسوية</a>.</div></li>
+            <li><div><b>تسمية الصندوق:</b> تقيّد القوائم الاستثمار في «صندوق منصة إحسان»، بينما يعرّف ملف الكيانات «صندوق وقف الجامعة الإسلامية» الذي يديره الأهلي كابيتال. نعمل على توحيد التسمية والتحقق من أنهما الوعاء نفسه.</div></li>
       <li><div><b>الهامش المعدّل 18.7٪</b> افتراض تحليلي يعيد تحميل إهلاك المعدات (1.32 م) على تكلفة الإيراد، ولا يغيّر صافي الربح.</div></li>
       <li><div><b>إضافات الأصول الثابتة 4.98 م</b> وفق قائمة التدفقات النقدية، ومنها معدات بنحو 4.4 م.</div></li>
-      <li><div><b>حصة الوقف في السقيفة:</b> 1.02 م دفتريًا = 49٪ × حقوق الشركاء 2.08 م. ونصيب ربح 2025 نحو 0.75 م = 49٪ × صافي الربح بعد الزكاة 1.52 م.</div></li>
+      <li><div><b>نصيب الوقف من ربح السقيفة</b> في 2025 نحو 0.75 م = 49٪ × صافي الربح بعد الزكاة 1.52 م.</div></li>
       <li><div><b>هامش صافي الربح</b> في الرسوم محسوب قبل الزكاة، والعائد على الأصول وحقوق الشركاء محسوب بعدها على متوسط الرصيد.</div></li>
       <li><div><b>التضخم 2.1٪</b> هو متوسط 2025 لمؤشر أسعار المستهلك في المملكة (الهيئة العامة للإحصاء عبر البنك الدولي). ونطاق 6–7٪ للمحفظة الوقفية افتراض للنقاش لا توصية بعائد محدد.</div></li>
-      <li><div><b>افتراضات نموذج المليار:</b> عائد يُعاد استثماره بالكامل، وأوقاف جديدة تُضاف نهاية كل سنة، واستحواذ 300 م يدخل أصلًا وقفيًا في بداية الأفق دون تمويل بالدين، ولا توزيع للغلة ولا مصروفات.</div></li>
+      <li><div><b>افتراضات نموذج المليار:</b> أساس 84.5 م، وعائد يُعاد استثماره بالكامل، وأوقاف جديدة تُضاف نهاية كل سنة، واستحواذ 300 م يدخل أصلًا وقفيًا في بداية الأفق دون تمويل بالدين، ولا توزيع للغلة ولا مصروفات.</div></li>
       <li><div><b>مستهدف الأصول العقارية:</b> يذكر تقرير الأوقاف أكثر من 180 م حتى نهاية 1447هـ، بينما يناقش المشروع استحواذًا بـ300 م. سنوحّد الرقم مع إدارة الوقف قبل التسليم الختامي.</div></li>
       <li><div><b>الرموز:</b> الأرقام بالريال السعودي، و«م» تعني مليون ريال، والأرقام بين قوسين سالبة.</div></li>
     </ol>
@@ -1084,11 +1058,11 @@ function bindTip(host,node,text,x,y){const t=tipFor(host);node.addEventListener(
 
 /* ---------- entity map ---------- */
 const NODES={
- uni:{t:"الجامعة الإسلامية",li:["الجهة المشرفة على الوقف وشركة السقيفة وفق اللوائح المنظمة.","تملك 51٪ من السقيفة بحصة 51,000 ريال (5,100 حصة).","لكل كيان هيكله التنظيمي والإداري الخاص."],go:"#files",gl:"الحوكمة واللوائح",tab:"gov"},
- waqf:{t:"وقف الجامعة الإسلامية بالمدينة المنورة",li:["أصول دفترية 59.5 م في 31 ديسمبر 2025: 56.4 م في صندوق منصة إحسان و3.08 م نقد.","أداء الصندوق المعلن 84 م، والفرق عن الدفاتر 24.5 م يحتاج مطابقة.","يملك 49٪ من السقيفة، ولا تظهر الحصة في قوائمه."],go:"#fund",gl:"الصندوق الوقفي"},
- saq:{t:"شركة السقيفة لتطوير الأعمال",li:["إيرادات 25.9 م في 2025 بنمو 169٪، وصافي ربح بعد الزكاة 1.52 م.","رأس مال 100 ألف ريال وقروض 10 م، وذمم مدينة 8.1 م.","حصة الوقف 49٪ تعادل نحو 1.02 م دفتريًا، والأرباح مبقاة في الشركة."],go:"#saqifa",gl:"تحليل السقيفة"},
- fund:{t:"صندوق منصة إحسان",li:["56.4 م ثابتة في مسودتي 2024 و2025، أي مقيدة بالتكلفة لا بصافي قيمة الأصول.","لا عائد مسجل ولا رسوم ولا تقارير أداء ظاهرة في الوثائق.","تمثل 95٪ من أصول الوقف: تركّز في وعاء واحد."],go:"#fund",gl:"ملاحظات قوائم الوقف"},
- cash:{t:"نقد الوقف",li:["ارتفع من 447 ألفًا إلى 3.08 م في 2025 (+2.63 م).","الزيادة تعادل 4.7٪ من قيمة الصندوق، وقد تكون توزيعات منه قُيّدت ريعًا للتبرعات.","مُسجّل في المسودة رأسَ مال الوقف الأصلي، والصحيح غالبًا عكس ذلك."],go:"#fund",gl:"العائد مقابل التضخم"}
+ uni:{t:"الجامعة الإسلامية",li:["الجهة المشرفة على الوقف وشركة السقيفة وفق اللوائح المنظمة.","تملك 51٪ من السقيفة.","لكل كيان هيكله التنظيمي والإداري الخاص."],go:"#files",gl:"الحوكمة واللوائح",tab:"gov"},
+ waqf:{t:"وقف الجامعة الإسلامية بالمدينة المنورة",li:["أصول 84.5 م في 31 ديسمبر 2025: 81.4 م في صندوق منصة إحسان و3.08 م نقد.","تتسق مع أداء الصندوق المعلن في تقرير الأوقاف (84.48 م).","يملك 49٪ من شركة السقيفة."],go:"#fund",gl:"الصندوق الوقفي"},
+ saq:{t:"شركة السقيفة لتطوير الأعمال",li:["إيرادات 25.9 م في 2025 بنمو 169٪، وصافي ربح بعد الزكاة 1.52 م.","مملوكة 51٪ للجامعة و49٪ للوقف.","ذراع مرشحة لتطوير الأصول المستحوذ عليها وتشغيلها."],go:"#saqifa",gl:"تحليل السقيفة"},
+ fund:{t:"صندوق منصة إحسان",li:["81.4 م: 56.4 م كما في القوائم و25 م وحدات إضافية بتسوية الفريق.","لا تظهر في الوثائق شروط الصندوق ولا رسومه ولا تقارير صافي قيمة الأصول.","يمثل 96٪ من أصول الوقف: تركّز في وعاء واحد."],go:"#reconcile",gl:"تسوية أصول الوقف"},
+ cash:{t:"نقد الوقف",li:["ارتفع من 447 ألفًا إلى 3.08 م في 2025 (+2.63 م).","يمثل 4٪ من أصول الوقف.","مسجّل في القوائم رأسَ مال الوقف الأصلي، والأصل الموقوف غالبًا هو المبلغ المستثمر."],go:"#fund",gl:"الصندوق الوقفي"}
 };
 const map=$('#map'),wires=$('#wires'),detail=$('#detail');
 function showNode(id){
@@ -1103,7 +1077,7 @@ function drawWires(){
   if(getComputedStyle(wires).display==='none')return;
   const r0=map.getBoundingClientRect();
   const box=id=>{const b=$(`.node[data-id="${id}"]`,map).getBoundingClientRect();return {x:b.left-r0.left,y:b.top-r0.top,w:b.width,h:b.height}};
-  const edges=[["uni","saq","own","51٪ · 51,000 ريال"],["waqf","saq","miss","49٪ · 49,000 ريال · غير مقيدة"],["waqf","fund","own",""],["waqf","cash","own",""]];
+  const edges=[["uni","saq","own","51٪"],["waqf","saq","own","49٪"],["waqf","fund","own",""],["waqf","cash","own",""]];
   edges.forEach(([a,b,cls,label],i)=>{
     const A=box(a),B=box(b);
     let x1=A.x+A.w/2,y1=A.y+A.h,x2=B.x+B.w/2,y2=B.y;
@@ -1177,14 +1151,12 @@ function fundChart(){
   const host=$('#ch-fund');const {s,w,h}=svgFor(host,170);
   const d=[["1444هـ",0.2],["1445هـ",50.2],["1446هـ",84.5]];
   const L=8,R=8,T=22,B=26,iw=w-L-R,ih=h-T-B,max=95,y=v=>T+ih*(max-v)/max;
-  el('line',{x1:L,x2:w-R,y1:y(59.5),y2:y(59.5),stroke:'var(--teal)','stroke-dasharray':'5 4'},s);
-  el('text',{x:w-R-2,y:y(59.5)-6,'text-anchor':'end',style:'fill:var(--teal);font-weight:700'},s,'59.5 م في الدفاتر');
   const gw=iw/3,bw=Math.min(54,gw*.5);
   d.forEach(([lab,v],i)=>{const cx=L+gw*(2-i)+gw/2;el('rect',{x:cx-bw/2,y:y(v),width:bw,height:Math.max(2,y(0)-y(v)),rx:4,fill:'var(--gold)'},s);el('text',{x:cx,y:y(v)-6,'text-anchor':'middle',class:'lbl-v'},s,v<1?'0.2':fmt(v,1));el('text',{x:cx,y:h-8,'text-anchor':'middle'},s,lab)});
 }
 
 /* ---------- model ---------- */
-const st={base:59.5,r:7,c:21.2,a:300};
+const st={base:84.5,r:7,c:17.7,a:300};
 function traj(base,r,c,a){const out=[base+a];for(let t=1;t<=10;t++)out.push(out[t-1]*(1+r/100)+c);return out}
 function req(base,r,a){const g=Math.pow(1+r/100,10);const fv=r===0?10:(g-1)/(r/100);return (1000-(base+a)*g)/fv}
 function modelChart(){
@@ -1210,15 +1182,15 @@ function renderModel(){
   $('#in-r').value=st.r;$('#in-c').value=st.c;$('#in-a').value=st.a;
   $$('[data-base]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.base===st.base)));
   modelChart();
-  $$('.sc').forEach(b=>b.classList.toggle('hit',st.base===59.5&&st.r===7&&b.dataset.c==String(st.c)&&b.dataset.a==String(st.a)));
+  $$('.sc').forEach(b=>b.classList.toggle('hit',st.r===7&&b.dataset.c==String(st.c)&&b.dataset.a==String(st.a)));
 }
 $('#in-r').addEventListener('input',e=>{st.r=+e.target.value;renderModel()});
 $('#in-c').addEventListener('input',e=>{st.c=+e.target.value;renderModel()});
 $('#in-a').addEventListener('input',e=>{st.a=+e.target.value;renderModel()});
 $$('[data-base]').forEach(b=>b.addEventListener('click',()=>{st.base=+b.dataset.base;renderModel()}));
-function preset(c,a){st.base=59.5;st.r=7;st.c=c;st.a=a;renderModel()}
+function preset(c,a){st.r=7;st.c=c;st.a=a;renderModel()}
 $$('#presets button').forEach(b=>b.addEventListener('click',()=>{const [c,a]=b.dataset.p.split(',').map(Number);preset(c,a)}));
-const SC=[["العائد وحده 7٪ من 59.5 م",0,0,117],["عائد 7٪ + أوقاف جديدة 25 م سنويًا",25,0,462],["استحواذ 300 م + عائد 7٪",0,300,707],["استحواذ 300 م + 7٪ + 21.2 م سنويًا",21.2,300,1000]];
+const SC=[["العائد وحده 7٪ من 84.5 م",0,0,166],["عائد 7٪ + أوقاف جديدة 25 م سنويًا",25,0,512],["استحواذ 300 م + عائد 7٪",0,300,756],["استحواذ 300 م + 7٪ + 17.7 م سنويًا",17.7,300,1000]];
 $('#scen').innerHTML=SC.map(([l,c,a,v])=>`<button class="sc" data-c="${c}" data-a="${a}" aria-label="${l}: ${v} مليون"><span>${l}</span><span class="t"><span style="width:${Math.min(100,v/10)}%"></span></span><b class="num">${v.toLocaleString('en-US')}</b></button>`).join('');
 $$('.sc').forEach(b=>b.addEventListener('click',()=>{preset(+b.dataset.c,+b.dataset.a);$('#model').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}));
 
